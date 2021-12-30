@@ -1,4 +1,34 @@
 @use '../../../styles/colors';
 
+.slider {
+	font-family: EB Garamond;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
 .slide {
+	width: 100%;
+	display: flex;
+	transform: rotate(-30deg);
+	background-color: colors.$primary-white;
+	div {
+		color: colors.$primary-black;
+		font-size: 4em;
+		white-space: nowrap;
+		font-weight: 900;
+		animation: animate 40s linear infinite;
+		animation-delay: -40s;
+		border: 0px;
+		span {
+			margin: 0px 10px;
+		}
+	}
+	@keyframes animate {
+		100% {
+			transform: translateX(-100%);
+		}
+	}
 }
