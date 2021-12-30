@@ -1,0 +1,77 @@
+@use '../../styles/colors';
+
+.hero {
+	flex: 0 0 auto;
+	width: auto;
+	display: flex;
+	align-self: center;
+	margin-top: 50px;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.imageContainer {
+	width: 600px;
+	height: 600px;
+
+	background-color: colors.$primary-blue;
+	border-radius: 300px;
+}
+
+.image {
+	justify-content: center;
+	margin: auto;
+}
+
+.name {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.firstName {
+	background: -webkit-linear-gradient(
+		0deg,
+		#d5202c 0%,
+		#9bc53d 50%,
+		#006daa 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	align-self: center;
+	margin: 0 auto;
+	font-family: DEVIS;
+	font-size: 200px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	text-align: center;
+}
+.description {
+	align-self: center;
+	font-family: EB Garamond;
+	font-size: 40px;
+	color: colors.$primary-white;
+	margin: 10px 0;
+}
+
+.lastName {
+	background: -webkit-linear-gradient(
+		0deg,
+		#d5202c 0%,
+		#9bc53d 50%,
+		#006daa 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	margin: 0 auto;
+	font-family: DEVIS;
+	font-size: 200px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+}

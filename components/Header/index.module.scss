@@ -1,3 +1,5 @@
+@use '../../styles/colors';
+
 .Header {
 	flex: 0 0 auto;
 	width: 100%;
@@ -10,16 +12,12 @@
 	padding-bottom: 15px;
 	justify-content: space-between;
 }
-.text {
-	color: var(--dl-color-primary-white);
+.birthYear {
+	color: colors.$primary-white;
 	text-align: left;
 }
-.image {
-	width: 35px;
-	height: 35px;
-	object-fit: cover;
-}
-.text1 {
-	color: var(--dl-color-primary-white);
+
+.currentYear {
+	color: colors.$primary-white;
 	text-align: right;
 }
