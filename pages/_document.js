@@ -11,24 +11,29 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					<link
-						rel='preconnect'
-						href='https://fonts.googleapis.com'
-					/>
-					<link
-						rel='preconnect'
-						href='https://fonts.gstatic.com'
-						crossOrigin
-					/>
-					<link
-						href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'
-						rel='stylesheet'
-					/>
-					<link
 						rel='preload'
 						href='/fonts/Devis/Devis.otf'
 						as='font'
 						crossOrigin
 					/>
+					<link
+						rel='preload'
+						href='/fonts/EB_Garamond/EBGaramond-Regular.ttf'
+						as='font'
+						crossOrigin
+					/>
+					{/* <link
+						rel='preload'
+						href='/fonts/EB_Garamond/EBGaramond-Bold.ttf'
+						as='font'
+						crossOrigin
+					/>
+					<link
+						rel='preload'
+						href='/fonts/EB_Garamond/EBGaramond-ExtraBold.ttf'
+						as='font'
+						crossOrigin
+					/> */}
 				</Head>
 				<body>
 					<Main />
