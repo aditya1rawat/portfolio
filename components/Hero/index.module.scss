@@ -5,7 +5,7 @@
 	width: auto;
 	display: flex;
 	align-self: center;
-	margin-top: 50px;
+	margin-top: 10px;
 	align-items: center;
 	margin-left: 150px;
 	margin-right: 150px;
@@ -15,7 +15,6 @@
 .imageContainer {
 	width: 600px;
 	height: 600px;
-
 	background-color: colors.$primary-blue;
 	border-radius: 300px;
 }
@@ -32,7 +31,7 @@
 	flex-direction: column;
 	justify-content: center;
 }
-.firstName {
+.bigName {
 	background: -webkit-linear-gradient(
 		0deg,
 		#d5202c 0%,
@@ -53,25 +52,43 @@
 .description {
 	align-self: center;
 	font-family: EB Garamond;
-	font-size: 40px;
+	font-size: 35px;
 	color: colors.$primary-white;
 	margin: 10px 0;
 }
 
-.lastName {
-	background: -webkit-linear-gradient(
-		0deg,
-		#d5202c 0%,
-		#9bc53d 50%,
-		#006daa 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-align: center;
-	margin: 0 auto;
-	font-family: DEVIS;
-	font-size: 200px;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 0.05em;
+.quickTech {
+	margin-top: 10px;
+}
+
+.qtheader {
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-end;
+}
+
+.overview {
+	color: colors.$primary-white;
+	font-size: 2rem;
+	margin: 0px 10px 5px 0;
+}
+
+.switch {
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	color: colors.$primary-white;
+	background-color: rgba(255, 239, 235, 0);
+	margin: 0 5px 0 5px;
+	border-style: none;
+	transition: 0.3s ease-in-out all;
+	&:hover {
+		cursor: pointer;
+		color: colors.$primary-black;
+		background-color: rgba(255, 239, 235, 1);
+	}
 }
