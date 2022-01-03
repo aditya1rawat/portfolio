@@ -72,7 +72,11 @@ export default function Hero() {
 			</VStack>
 			<AspectRatio flexShrink={0} ratio={1} w={56} h={56} as='figure'>
 				<Box>
-					<Image src={'/assets/images/rawat.png'} rounded='full' />
+					<Image
+						src={'/assets/images/rawat.png'}
+						rounded='full'
+						alt={'Picture of Aditya Rawat'}
+					/>
 				</Box>
 			</AspectRatio>
 		</Stack>
