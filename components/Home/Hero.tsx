@@ -39,8 +39,7 @@ export default function Hero() {
 								yoyo: Infinity,
 								from: 0,
 								duration: 0.35,
-								ease: 'easeInOut',
-								type: 'tween'
+								ease: 'easeInOut'
 							}}
 						>
 							👋🏽
