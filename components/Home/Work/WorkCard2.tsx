@@ -70,6 +70,7 @@ export default function WorkCard() {
 				<Box display={'flex'} alignItems={'center'} gap={'1'}>
 					<Tooltip label={'Live'}>
 						<IconButton
+							aria-label='Live Demo'
 							size={'md'}
 							icon={<FiArrowUpRight />}
 							variant={'ghost'}
@@ -77,6 +78,7 @@ export default function WorkCard() {
 					</Tooltip>
 					<Tooltip label={'Github'}>
 						<IconButton
+							aria-label='Github'
 							size={'md'}
 							icon={<FiGithub />}
 							variant={'ghost'}
@@ -84,6 +86,7 @@ export default function WorkCard() {
 					</Tooltip>
 					<Tooltip label={show ? 'Less Info' : 'More Info'}>
 						<IconButton
+							aria-label='Dropdown'
 							size={'md'}
 							icon={show ? <FiArrowUp /> : <FiArrowDown />}
 							onClick={() => {
