@@ -43,19 +43,20 @@ const WorkCard = () => {
 				{items.map(({ image, text, title }) => (
 					<GridItem
 						key={title}
-						borderWidth={'3px'}
+						// borderWidth={'3px'}
 						background={
-							'linear-gradient(90deg, #D5202C 0%, #9BC53D 53.23%, #006DAA 99.99%, #FFEFEB 100%)'
+							'linear-gradient(45deg, #D5202C 0%, #9BC53D 53.23%, #006DAA 99.99%, #FFEFEB 100%)'
 						}
 						rounded='xl'
+						p={1}
 					>
 						<VStack
 							h='full'
 							justifyContent='space-between'
-							p={6}
 							gap={'10px'}
 							rounded='xl'
 							background={'black'}
+							p={6}
 						>
 							<Box justifyContent='flex-start' w='full'>
 								<AspectRatio

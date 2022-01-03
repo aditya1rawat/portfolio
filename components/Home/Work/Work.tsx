@@ -14,7 +14,6 @@ import NextLink from 'next/link';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 import WorkCard from './WorkCard';
-import WorkCard2 from './WorkCard2';
 
 export default function Work() {
 	return (
