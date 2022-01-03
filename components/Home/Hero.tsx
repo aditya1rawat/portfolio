@@ -6,7 +6,6 @@ import {
 	Box,
 	AspectRatio,
 	Image,
-	Link,
 	Icon,
 	Button
 } from '@chakra-ui/react';

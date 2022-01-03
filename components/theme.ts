@@ -13,6 +13,6 @@ export const theme = extendTheme({
 	},
 	fonts: {
 		heading: `DEVIS, ${og.fonts.heading}`,
-		body: `Inter, ${og.fonts.body}`
+		body: `EB_Garamond, ${og.fonts.body}`
 	}
 });
