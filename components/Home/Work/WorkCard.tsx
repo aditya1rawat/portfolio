@@ -40,9 +40,8 @@ const WorkCard = () => {
 		<Box mt={'15px'}>
 			<SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={8} w='full'>
 				{items.map(({ image, text, title }) => (
-					<motion.div whileHover={{ scale: 1.01 }}>
+					<motion.div whileHover={{ scale: 1.01 }} key={title}>
 						<GridItem
-							key={title}
 							// borderWidth={'3px'}
 							background={
 								'linear-gradient(45deg, #D5202C 0%, #9BC53D 53.23%, #006DAA 99.99%, #FFEFEB 100%)'
@@ -70,6 +69,7 @@ const WorkCard = () => {
 											src={`${image}`}
 											w={'12'}
 											rounded='full'
+											alt={`${title} Logo`}
 										/>
 									</AspectRatio>
 								</Box>
