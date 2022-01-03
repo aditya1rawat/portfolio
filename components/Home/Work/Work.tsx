@@ -25,13 +25,11 @@ export default function Work() {
 				w='full'
 			>
 				<Heading size='xl' as='h2' display={'flex'} flexDir={'row'}>
-					My Work
+					Selected Work
 				</Heading>
 
 				<Stack direction={'column'} spacing={'14'} mt={'12'}>
-					<WorkCard2 />
-					<WorkCard2 />
-					<WorkCard2 />
+					<WorkCard />
 				</Stack>
 				<NextLink href='/work' passHref>
 					<Button rightIcon={<Icon as={FiArrowRight} />}>
