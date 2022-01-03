@@ -11,13 +11,13 @@ import {
 	Button
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import { motion } from 'framer-motion';
+
 import { FiArrowRight } from 'react-icons/fi';
 import WorkCard from './WorkCard';
 
 export default function Work() {
 	return (
-		<Box alignItems='center' w='full' as='section' mt='100px'>
+		<Box alignItems='center' w='full' as='section' mt='24'>
 			<VStack
 				spacing={3}
 				alignItems={{ lg: 'flex-start', base: 'center' }}
