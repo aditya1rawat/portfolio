@@ -7,7 +7,7 @@ export default function Footer() {
 			style={{
 				display: 'flex',
 				flexDirection: 'column',
-				gap: '6rem',
+				gap: '4rem',
 				marginBottom: '25px'
 			}}
 		>
