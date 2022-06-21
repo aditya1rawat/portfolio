@@ -11,13 +11,15 @@ import {
 	Image,
 	Box,
 	Button,
-	IconButton
+	IconButton,
+	useColorModeValue
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 import { FiArrowUpRight, FiGithub } from 'react-icons/fi';
 
 export default function WorkCard({ image, text, title }: string) {
+	const iconColor = useColorModeValue('black', 'white');
 	return (
 		<motion.div whileHover={{ scale: 1.01 }} key={title}>
 			<GridItem
@@ -33,7 +35,7 @@ export default function WorkCard({ image, text, title }: string) {
 					justifyContent='space-between'
 					gap={'10px'}
 					rounded='xl'
-					background={'black'}
+					background={useColorModeValue('white', 'black')}
 					p={6}
 					h='full'
 				>
@@ -53,7 +55,7 @@ export default function WorkCard({ image, text, title }: string) {
 						spacing={2}
 						alignItems='flex-start'
 						justifyContent='flex-end'
-						color={'white'}
+						color={useColorModeValue('black', 'white')}
 					>
 						<Heading size='md'>{title}</Heading>
 						<Text fontSize='sm'>{text}</Text>
@@ -61,12 +63,17 @@ export default function WorkCard({ image, text, title }: string) {
 					<Flex direction={'row'} gap={'2'} mb='1' width={'full'}>
 						<IconButton
 							aria-label='Live Demo'
+							variant={'outline'}
+							colorScheme={useColorModeValue('black', 'white')}
 							icon={<FiArrowUpRight />}
 							w='full'
 						/>
 						<IconButton
 							aria-label='Live Demo'
-							icon={<FiGithub />}
+							variant='solid'
+							borderColor={useColorModeValue('black', 'white')}
+							borderWidth={'1px'}
+							icon={<FiGithub color={iconColor} />}
 							w='full'
 						/>
 					</Flex>

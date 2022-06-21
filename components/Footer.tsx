@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react';
+import { Button, Flex } from '@chakra-ui/react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -60,14 +60,14 @@ export default function Footer() {
 			</Flex>
 			<Flex justifyContent={'space-between'} alignItems={'center'}>
 				<span>&copy; Aditya Rawat {new Date().getFullYear()}</span>
-				<span
+				<Button
 					onClick={() =>
 						window.scrollTo({ top: 0, behavior: 'smooth' })
 					}
 					style={{ cursor: 'pointer' }}
 				>
 					Back To Top &uarr;
-				</span>
+				</Button>
 			</Flex>
 		</footer>
 	);
