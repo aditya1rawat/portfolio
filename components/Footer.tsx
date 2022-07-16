@@ -34,26 +34,26 @@ export default function Footer() {
 						Github
 					</a>
 					<a
-						href='https://www.instagram.com/ad1tya_rawhaaat/'
-						target='_blank'
-						rel='noreferrer'
-					>
-						Instagram
-					</a>
-					<a
 						href='mailto:aditya1rawat@gmail.com'
 						target='_blank'
 						rel='noreferrer'
 					>
 						Email
 					</a>
+					<a
+						href='https://www.instagram.com/ad1tya_rawhaaat/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						Instagram
+					</a>
 				</Flex>
 				<Flex
 					direction={'column'}
-					alignItems={'flex-start'}
+					alignItems={'flex-end'}
 					gap={'1.8rem'}
 				>
-					<Link href='/talks'>Talks</Link>
+					<Link href='/talks'>Discord</Link>
 					<Link href='/tech'>Technologies</Link>
 					<Link href='https://medium.com/@aditya1rawat'>Writing</Link>
 				</Flex>
