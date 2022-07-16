@@ -7,11 +7,15 @@ import {
 	AspectRatio,
 	Image,
 	Icon,
-	Button
+	Button,
+	IconButton,
+	SimpleGrid
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { motion } from 'framer-motion';
-import { FiArrowRight } from 'react-icons/fi';
+import { FiArrowRight, FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
+
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 export default function Hero() {
 	return (
@@ -52,23 +56,54 @@ export default function Hero() {
 				</Stack>
 				<Text lineHeight='170%' as='h2'>
 					I am a{' '}
-					<strong style={{ fontWeight: '800' }}>
-						self-taught full-stack web developer
-					</strong>{' '}
-					and designer creating anything from small hackathon projects
-					to complex, full-fledged applications. I work as a{' '}
-					<strong style={{ fontWeight: '800' }}>
-						freelance web devloper
-					</strong>{' '}
+					<RoughNotation
+						type='highlight'
+						color='#f57f17'
+						animationDuration={1500}
+						multiline
+						show
+					>
+						self-taught full-stack web developer and designer
+					</RoughNotation>{' '}
+					creating anything from small hackathon projects to complex,
+					full-fledged applications. I work as{' '}
+					<RoughNotation
+						type='box'
+						// brackets={['left', 'right']}
+						// padding={'5px'}
+						color='#bf360c'
+						strokeWidth={'2px'}
+						animationDuration={1500}
+						show
+					>
+						a freelance web developer
+					</RoughNotation>{' '}
 					and have worked with various startups and companies. I
 					currently attend high school in SoCal driven to pursue a
 					future in Computer Science.
 				</Text>
-				<NextLink href='/about' passHref>
+				<SimpleGrid columns={3} gap={5}>
+					<IconButton
+						aria-label='toggle theme'
+						icon={<FiGithub />}
+						variant='outline'
+					/>
+					<IconButton
+						aria-label='toggle theme'
+						icon={<FiMail />}
+						variant='outline'
+					/>
+					<IconButton
+						aria-label='toggle theme'
+						icon={<FiInstagram />}
+						variant='outline'
+					/>
+				</SimpleGrid>
+				{/* <NextLink href='/about' passHref>
 					<Button rightIcon={<Icon as={FiArrowRight} />}>
 						More About Me
 					</Button>
-				</NextLink>
+				</NextLink> */}
 			</VStack>
 			<AspectRatio flexShrink={0} ratio={1} w={56} h={56} as='figure'>
 				<Box>

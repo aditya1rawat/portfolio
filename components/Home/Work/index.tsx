@@ -39,12 +39,12 @@ export default function Work() {
 				w='full'
 			>
 				<Heading size='xl' as='h2' display={'flex'} flexDir={'row'}>
-					Selected Works
+					Work / Projects
 				</Heading>
 
 				<Stack direction={'column'} spacing={'14'}>
 					<SimpleGrid
-						columns={{ base: 1, md: 2, lg: 3 }}
+						columns={{ base: 1, md: 3, lg: 3 }}
 						gap={8}
 						w='full'
 					>
