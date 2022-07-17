@@ -24,6 +24,37 @@ export default function ProjectList() {
 			wip: true
 		},
 		{
+			image: '/assets/images/worklogos/retinaoct.png',
+			title: 'Retina OCT',
+			text: 'Using machine learning and artificial intelligence to help doctors diagnose and treat patients with retinal diseases.',
+			tech: [
+				'React Native',
+				'Typescript',
+				'Node.js',
+				'PostgreSQL',
+				'GraphQL',
+				'Typeform',
+				'URQL',
+				'Firebase',
+				'Tensorflow.js',
+				'Expo'
+			],
+			wip: true
+		},
+		{
+			image: '/assets/images/worklogos/petzcare.png',
+			title: 'Petz Care',
+			text: 'Nonprofit aiming to fill the gap within the animal care industry. We aim to create a platform to connect verified professionals with pet owners to provide them with professional online advice.',
+			tech: [
+				'React.js',
+				'AWS',
+				'Node.js',
+				'Firebase',
+				'Styled Components'
+			],
+			wip: true
+		},
+		{
 			image: '/assets/images/worklogos/sigmoidhackslogo.png',
 			title: 'Sigmoid Hacks 1.0',
 			text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
@@ -49,6 +80,28 @@ export default function ProjectList() {
 				'Algolia'
 			],
 			wip: true
+		},
+
+		{
+			image: '/assets/images/worklogos/carbonemissions.png',
+			title: 'Carbon (E)missions',
+			text: 'Project for Irvine Hacks 2020. A platform for users to track their carbon footprint from their vehicle use.',
+			tech: ['HTML', 'SCSS', 'Node.js', 'JQuery', 'Google Maps API'],
+			wip: false
+		},
+		{
+			image: '/assets/images/worklogos/covidcentral.png',
+			title: 'COVID Central',
+			text: 'Project for Hack Quarantine 2020. A platform for users to learn about the COVID situation, both locally and globally.',
+			tech: [
+				'HTML',
+				'SCSS',
+				'MongoDB Atlas',
+				'Radar.io',
+				'News API',
+				'LeafletJS'
+			],
+			wip: false
 		}
 	];
 
