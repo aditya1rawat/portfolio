@@ -40,7 +40,7 @@ export default function Hero() {
 				<Stack
 					spacing={3}
 					w='full'
-					direction={'row'}
+					direction={['column', 'row', 'row']}
 					justifyContent={{ base: 'center', md: 'flex-start' }}
 					alignItems='center'
 				>
@@ -65,7 +65,11 @@ export default function Hero() {
 					</Heading>
 				</Stack>
 				<RoughNotationGroup show>
-					<Text lineHeight='170%' as='h2'>
+					<Text
+						lineHeight='170%'
+						as='h2'
+						textAlign={['center', 'unset', 'unset']}
+					>
 						I am a{' '}
 						<RoughNotation
 							type='highlight'
@@ -89,12 +93,12 @@ export default function Hero() {
 							a freelance web developer
 						</RoughNotation>{' '}
 						and have worked with various startups and companies. I
-						am currently a senior attending high school in SoCal,
-						and currently pursuing a future in computer science.
+						am currently a senior attending high school in SoCal
+						actively pursuing a future in computer science.
 					</Text>
 				</RoughNotationGroup>
 
-				<Stack direction={'row'} justifyItems={'center'}>
+				<Stack direction={'row'} justifyContent={'center'}>
 					<a
 						href='/assets/Aditya Rawat - Resume.pdf'
 						target='_blank'
