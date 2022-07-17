@@ -39,6 +39,7 @@ const Contact: NextPage = () => {
 						<a
 							href='https://www.timeanddate.com/time/zones/pdt'
 							target='_blank'
+							rel='noreferrer'
 						>
 							<strong>PDT (UTC - 7)</strong>
 						</a>
@@ -129,6 +130,7 @@ const Contact: NextPage = () => {
 							<a
 								href={'/assets/Aditya Rawat - Resume.pdf'}
 								target='_blank'
+								rel='noreferrer'
 							>
 								<IconButton
 									variant={'outline'}

@@ -63,6 +63,7 @@ export default function Footer() {
 					<a
 						href='/assets/Aditya Rawat - Resume.pdf'
 						target={'_blank'}
+						rel='noreferrer'
 					>
 						Resume
 					</a>
