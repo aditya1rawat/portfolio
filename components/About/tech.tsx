@@ -2,9 +2,7 @@ import {
 	Box,
 	Heading,
 	IconButton,
-	Image,
 	SimpleGrid,
-	Text,
 	Tooltip,
 	useColorModeValue
 } from '@chakra-ui/react';
@@ -94,13 +92,11 @@ export default function Tech() {
 			<SimpleGrid minChildWidth='120px' spacing='40px' pt={3}>
 				{languages.map(language => {
 					return (
-						<Tooltip label={language.name}>
+						<Tooltip label={language.name} key={language.name}>
 							<IconButton
 								variant={'outline'}
-								borderColor={useColorModeValue(
-									'black',
-									'white'
-								)}
+								borderColor='black'
+								_dark={{ borderColor: 'white' }}
 								aria-label={language.name}
 								icon={language.icon}
 							/>
@@ -115,13 +111,11 @@ export default function Tech() {
 			<SimpleGrid minChildWidth='120px' spacing='40px' pt={3}>
 				{servicesTech.map(service => {
 					return (
-						<Tooltip label={service.name}>
+						<Tooltip label={service.name} key={service.name}>
 							<IconButton
 								variant={'outline'}
-								borderColor={useColorModeValue(
-									'black',
-									'white'
-								)}
+								borderColor='black'
+								_dark={{ borderColor: 'white' }}
 								aria-label={service.name}
 								icon={service.icon}
 							/>
@@ -136,13 +130,11 @@ export default function Tech() {
 			<SimpleGrid minChildWidth='120px' spacing='40px' pt={3}>
 				{currentlyLearning.map(learning => {
 					return (
-						<Tooltip label={learning.name}>
+						<Tooltip label={learning.name} key={learning.name}>
 							<IconButton
 								variant={'outline'}
-								borderColor={useColorModeValue(
-									'black',
-									'white'
-								)}
+								borderColor='black'
+								_dark={{ borderColor: 'white' }}
 								aria-label={learning.name}
 								icon={learning.icon}
 							/>

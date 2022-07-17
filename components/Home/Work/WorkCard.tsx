@@ -18,10 +18,16 @@ import { motion } from 'framer-motion';
 import NextLink from 'next/link';
 import { FiArrowUpRight, FiGithub } from 'react-icons/fi';
 
-export default function WorkCard({ image, title, text }: string) {
+interface WorkCardProps {
+	image: string;
+	title: string;
+	text: string;
+}
+
+export default function WorkCard(props: WorkCardProps) {
 	const iconColor = useColorModeValue('black', 'white');
 	return (
-		<motion.div whileHover={{ translateY: -5 }} key={title}>
+		<motion.div whileHover={{ translateY: -5 }} key={props.title}>
 			<GridItem
 				// borderWidth={'3px'}
 				background={
@@ -42,10 +48,10 @@ export default function WorkCard({ image, title, text }: string) {
 					<Box justifyContent='flex-start' w='full'>
 						<AspectRatio ratio={1} w={24} h={24} as='figure'>
 							<Image
-								src={`${image}`}
+								src={`${props.image}`}
 								w={'12'}
 								rounded='full'
-								alt={`${title} Logo`}
+								alt={`${props.title} Logo`}
 							/>
 						</AspectRatio>
 					</Box>
@@ -58,8 +64,8 @@ export default function WorkCard({ image, title, text }: string) {
 							justifyContent='flex-start'
 							color={useColorModeValue('black', 'white')}
 						>
-							<Heading size='md'>{title}</Heading>
-							<Text fontSize='sm'>{text}</Text>
+							<Heading size='md'>{props.title}</Heading>
+							<Text fontSize='sm'>{props.text}</Text>
 						</VStack>
 					</NextLink>
 					<Flex direction={'row'} gap={'2'} mb='1' width={'full'}>

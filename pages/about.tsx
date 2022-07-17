@@ -20,7 +20,7 @@ const About: NextPage = () => {
 				rounded={'lg'}
 			/>
 			<Heading as={'h2'} my='3'>
-				Hi. I'm Aditya Rawat
+				Hi. I&apos;m Aditya Rawat
 			</Heading>
 			<Text>
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore

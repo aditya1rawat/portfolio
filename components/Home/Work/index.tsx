@@ -51,6 +51,7 @@ export default function Work() {
 						{items.map(item => {
 							return (
 								<WorkCard
+									key={item.title}
 									image={item.image}
 									title={item.title}
 									text={item.text}
