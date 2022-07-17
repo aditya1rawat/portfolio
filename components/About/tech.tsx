@@ -89,12 +89,13 @@ export default function Tech() {
 			<Heading as={'h3'} size='md' mt='10' mb='2'>
 				Languages I Know & Use
 			</Heading>
-			<SimpleGrid minChildWidth='120px' spacing='40px' pt={3}>
+			<SimpleGrid columns={6} spacing={5} pt={3}>
 				{languages.map(language => {
 					return (
 						<Tooltip label={language.name} key={language.name}>
 							<IconButton
-								variant={'outline'}
+								fontSize={25}
+								variant={'ghost'}
 								borderColor='black'
 								_dark={{ borderColor: 'white' }}
 								aria-label={language.name}
@@ -108,12 +109,14 @@ export default function Tech() {
 			<Heading as={'h3'} size='md' mt='10' mb='2'>
 				Services & Frameworks I Know & Use
 			</Heading>
-			<SimpleGrid minChildWidth='120px' spacing='40px' pt={3}>
+			<SimpleGrid columns={9} spacing={5} pt={3}>
 				{servicesTech.map(service => {
 					return (
 						<Tooltip label={service.name} key={service.name}>
 							<IconButton
-								variant={'outline'}
+								fontSize={25}
+								size={'lg'}
+								variant={'ghost'}
 								borderColor='black'
 								_dark={{ borderColor: 'white' }}
 								aria-label={service.name}
@@ -132,7 +135,8 @@ export default function Tech() {
 					return (
 						<Tooltip label={learning.name} key={learning.name}>
 							<IconButton
-								variant={'outline'}
+								fontSize={25}
+								variant={'ghost'}
 								borderColor='black'
 								_dark={{ borderColor: 'white' }}
 								aria-label={learning.name}
