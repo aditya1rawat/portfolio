@@ -23,7 +23,7 @@ export default function Footer() {
 				>
 					<Link href='/'>Home</Link>
 					<Link href='/about'>About</Link>
-					<Link href='/projects'>Projects</Link>
+					<Link href='/work'>Projects</Link>
 				</Flex>
 				<Flex direction={'column'} alignItems={'center'} gap={'1.8rem'}>
 					<a
@@ -53,8 +53,8 @@ export default function Footer() {
 					alignItems={'flex-end'}
 					gap={'1.8rem'}
 				>
-					<Link href='/talks'>Discord</Link>
-					<Link href='/tech'>Technologies</Link>
+					<Link href='/#'>Discord</Link>
+					<Link href='/#'>Resume</Link>
 					<Link href='https://medium.com/@aditya1rawat'>Writing</Link>
 				</Flex>
 			</Flex>

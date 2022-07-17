@@ -82,7 +82,7 @@ export default function Hero() {
 					currently attend high school in SoCal driven to pursue a
 					future in Computer Science.
 				</Text>
-				<SimpleGrid columns={3} gap={5}>
+				<SimpleGrid columns={3} gap={3}>
 					<IconButton
 						aria-label='toggle theme'
 						icon={<FiGithub />}
@@ -108,7 +108,7 @@ export default function Hero() {
 			<AspectRatio flexShrink={0} ratio={1} w={56} h={56} as='figure'>
 				<Box>
 					<Image
-						src={'/assets/images/rawat.png'}
+						src={'/assets/images/me/rawat.png'}
 						rounded='full'
 						alt={'Picture of Aditya Rawat'}
 					/>

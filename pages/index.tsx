@@ -1,11 +1,13 @@
+import { Box } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Contact from '../components/Home/Contact';
 import Hero from '../components/Home/Hero';
 import Work from '../components/Home/Work';
 
 const Home: NextPage = () => {
 	return (
-		<div>
+		<Box width={'full'}>
 			<Head>
 				<title>Create Next App</title>
 				<meta
@@ -16,7 +18,8 @@ const Home: NextPage = () => {
 			</Head>
 			<Hero />
 			<Work />
-		</div>
+			<Contact />
+		</Box>
 	);
 };
 

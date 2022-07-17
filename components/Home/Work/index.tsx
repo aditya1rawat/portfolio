@@ -39,7 +39,7 @@ export default function Work() {
 				w='full'
 			>
 				<Heading size='xl' as='h2' display={'flex'} flexDir={'row'}>
-					Work / Projects
+					Projects / Work
 				</Heading>
 
 				<Stack direction={'column'} spacing={'14'}>
