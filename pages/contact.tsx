@@ -53,6 +53,7 @@ const Contact: NextPage = () => {
 									fontSize={50}
 									padding='10'
 									py='16'
+									aria-label={'email'}
 								/>
 							</a>
 						</Box>
@@ -88,6 +89,7 @@ const Contact: NextPage = () => {
 										duration: 2000
 									});
 								}}
+								aria-label={'discord'}
 							/>
 						</Box>
 						<Box>
