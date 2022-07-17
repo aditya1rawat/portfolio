@@ -34,6 +34,15 @@ const Contact: NextPage = () => {
 						Always available for oppurtunities with startups,
 						companies, and agencies.
 					</Text>
+					<Text mt={24}>
+						Timezone:{' '}
+						<a
+							href='https://www.timeanddate.com/time/zones/pdt'
+							target='_blank'
+						>
+							<strong>PDT (UTC - 7)</strong>
+						</a>
+					</Text>
 				</Box>
 				<Box>
 					<Heading fontSize={'25px'} mb={5}>
@@ -77,7 +86,7 @@ const Contact: NextPage = () => {
 										render: () => (
 											<Box
 												p={3}
-												color='white'
+												color='black'
 												background='#04ce41'
 												borderRadius={5}
 											>
@@ -117,7 +126,10 @@ const Contact: NextPage = () => {
 						</Box>
 
 						<Box>
-							<a href={'#'}>
+							<a
+								href={'/assets/Aditya Rawat - Resume.pdf'}
+								target='_blank'
+							>
 								<IconButton
 									variant={'outline'}
 									borderWidth={'3px'}
@@ -129,7 +141,7 @@ const Contact: NextPage = () => {
 									fontSize={50}
 									padding='10'
 									py='16'
-									aria-label={'Instagram'}
+									aria-label={'Resume'}
 								/>
 							</a>
 						</Box>

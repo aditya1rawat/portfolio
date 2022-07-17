@@ -60,7 +60,12 @@ export default function Footer() {
 					>
 						LinkedIn
 					</a>
-					<a href='#'>Resume</a>
+					<a
+						href='/assets/Aditya Rawat - Resume.pdf'
+						target={'_blank'}
+					>
+						Resume
+					</a>
 					<a href='https://medium.com/@aditya1rawat'>Writing</a>
 				</Flex>
 			</Flex>
