@@ -22,19 +22,28 @@ const About: NextPage = () => {
 			<Heading as={'h2'} my='3'>
 				Hi. I&apos;m Aditya Rawat
 			</Heading>
-			<Text>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-				iure totam nam est ab eos, officiis laudantium magni
-				necessitatibus consequuntur dolorem quidem dolor at.
-				Reprehenderit optio repudiandae laudantium natus tempora nisi
-				quis, inventore provident odio atque pariatur, adipisci animi
-				obcaecati reiciendis ratione nobis. Dolorum similique commodi
-				sint deserunt eaque consequuntur, quos vero ut, fugiat ad
-				praesentium animi iusto laudantium, asperiores debitis quaerat
-				nesciunt ex cum? Quisquam facilis eum commodi soluta enim nemo
-				eveniet ratione laudantium nobis modi impedit nam, unde in saepe
-				fuga! At magnam, vel amet dolorem architecto rem, esse provident
-				quas sint qui praesentium dicta voluptatum. Ad, voluptatibus.
+			<Text my='5'>
+				I began my journey as a programmer early in elementary school
+				originally diving straight into software engineering. Over time,
+				I began to learn web devleopment which, because of it's visual
+				product and appeal, became my passion.
+			</Text>
+			<Text my='5'>
+				I began by making small websites which were all mostly static,
+				but over time I implemented various aspects of software
+				engineering to build larger, more dynamic web applications that
+				had a purpose other than being pretty.
+			</Text>
+			<Text my='5'>
+				As I continued to grow and learn, I began connecting with a
+				people around me with similar interests and through that I was
+				able to expand my knowledge and skillset. By today, I have
+				started and worked for several nonprofits, startups, and small
+				companies.
+			</Text>
+			<Text my='5'>
+				Still a student, there is still so much to learn, and I am
+				always looking for more oppurtunities to learn and grow.
 			</Text>
 			<Tech />
 		</Box>

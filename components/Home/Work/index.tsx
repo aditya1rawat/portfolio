@@ -12,21 +12,27 @@ import NextLink from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
 import WorkCard from './WorkCard';
 
-const items = [
+const projects = [
 	{
 		image: '/assets/images/worklogos/onpointlogo.png',
-		title: 'OnPoint',
-		text: 'A platform for teenagers to create quality media about the modern world to educate and inform the public.'
+		title: 'OnPoint v2.0',
+		text: 'A platform for teenagers to create quality media about the modern world to educate and inform the public.',
+		live: 'https://onpointsitev2.vercel.app/',
+		github: 'https://github.com/aditya1rawat/onpointsite2.0'
 	},
 	{
 		image: '/assets/images/worklogos/sigmoidhackslogo.png',
-		title: 'Sigmoid Hacks',
-		text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!'
+		title: 'Sigmoid Hacks 1.0',
+		text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
+		live: 'https://www.sigmoidhacks.org/',
+		github: 'https://github.com/SigmoidHacks/site'
 	},
 	{
 		image: '/assets/images/worklogos/bytelogo.png',
 		title: 'Byte',
-		text: 'Reinventing how hackathons are run forever by making a more inclusive and rewarding experience and interface!'
+		text: 'Reinventing how hackathons are run forever by making a more inclusive and rewarding experience and interface!',
+		live: 'https://bytebuild.vercel.app/',
+		github: 'https://github.com/byte-build/web'
 	}
 ];
 
@@ -48,13 +54,15 @@ export default function Work() {
 						gap={8}
 						w='full'
 					>
-						{items.map(item => {
+						{projects.map(project => {
 							return (
 								<WorkCard
-									key={item.title}
-									image={item.image}
-									title={item.title}
-									text={item.text}
+									key={project.title}
+									image={project.image}
+									title={project.title}
+									text={project.text}
+									live={project.live}
+									github={project.github}
 								/>
 							);
 						})}

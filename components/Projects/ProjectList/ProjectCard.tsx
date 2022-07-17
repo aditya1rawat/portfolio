@@ -17,7 +17,8 @@ import {
 	Tag,
 	TagLeftIcon,
 	TagLabel,
-	Stack
+	Stack,
+	Link
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import NextLink from 'next/link';
@@ -29,6 +30,8 @@ interface ProjectCardProps {
 	text: string;
 	techArray: Array<string>;
 	wip: boolean;
+	live: string;
+	github: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -100,27 +103,41 @@ export default function ProjectCard(props: ProjectCardProps) {
 						</Box>
 
 						<Flex direction={'row'} gap={'2'} mb='1' width={'full'}>
-							<IconButton
-								aria-label='Live Demo'
-								variant={'outline'}
-								colorScheme={useColorModeValue(
-									'black',
-									'white'
-								)}
-								icon={<FiArrowUpRight />}
-								w='full'
-							/>
-							<IconButton
-								aria-label='Live Demo'
-								variant='solid'
-								borderColor={useColorModeValue(
-									'black',
-									'white'
-								)}
-								borderWidth={'1px'}
-								icon={<FiGithub color={iconColor} />}
-								w='full'
-							/>
+							<Link
+								href={props.live}
+								target='_blank'
+								rel='noreferrer'
+								w={'full'}
+							>
+								<IconButton
+									aria-label='Live Demo'
+									variant={'outline'}
+									colorScheme={useColorModeValue(
+										'black',
+										'white'
+									)}
+									icon={<FiArrowUpRight />}
+									w='full'
+								/>
+							</Link>
+							<Link
+								href={props.github}
+								target='_blank'
+								rel='noreferrer'
+								w={'full'}
+							>
+								<IconButton
+									aria-label='Live Demo'
+									variant='solid'
+									borderColor={useColorModeValue(
+										'black',
+										'white'
+									)}
+									borderWidth={'1px'}
+									icon={<FiGithub color={iconColor} />}
+									w='full'
+								/>
+							</Link>
 						</Flex>
 					</Stack>
 				</Box>

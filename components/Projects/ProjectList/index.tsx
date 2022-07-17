@@ -14,17 +14,52 @@ export default function ProjectList() {
 				'Framer-Motion',
 				'EditorJS'
 			],
-			wip: false
+			wip: false,
+			live: 'https://onpointnews.org/',
+			github: 'https://github.com/OnPointOrg/site'
 		},
 		{
 			image: '/assets/images/worklogos/onpointlogo.png',
 			title: 'OnPoint v2.0',
 			text: 'A platform for teenagers to create quality media about the modern world to educate and inform the public. v2.0',
 			tech: ['Next.js', 'Chakra-UI', 'Firebase', 'Framer-Motion'],
-			wip: true
+			wip: true,
+			live: 'https://onpointsitev2.vercel.app/',
+			github: 'https://github.com/aditya1rawat/onpointsite2.0'
 		},
 		{
-			image: '/assets/images/worklogos/retinaoct.png',
+			image: '/assets/images/worklogos/sigmoidhackslogo.png',
+			title: 'Sigmoid Hacks 1.0',
+			text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
+			tech: [
+				'Next.js',
+				'Emotion',
+				'Styled Components',
+				'Firebase',
+				'Framer-Motion'
+			],
+			wip: false,
+			live: 'https://www.sigmoidhacks.org/',
+			github: 'https://github.com/SigmoidHacks/site'
+		},
+		{
+			image: '/assets/images/worklogos/bytelogo.png',
+			title: 'Byte',
+			text: 'Reinventing how hackathons are run forever by making a more inclusive and rewarding experience and interface!',
+			tech: [
+				'Next.js',
+				'balloon-css',
+				'Sass',
+				'Firebase',
+				'CKEditor',
+				'Algolia'
+			],
+			wip: true,
+			live: 'https://bytebuild.vercel.app/',
+			github: 'https://github.com/byte-build/web'
+		},
+		{
+			image: '/assets/images/worklogos/github.png',
 			title: 'Retina OCT',
 			text: 'Using machine learning and artificial intelligence to help doctors diagnose and treat patients with retinal diseases.',
 			tech: [
@@ -39,10 +74,12 @@ export default function ProjectList() {
 				'Tensorflow.js',
 				'Expo'
 			],
-			wip: true
+			wip: true,
+			live: '',
+			github: 'https://github.com/retinaoct'
 		},
 		{
-			image: '/assets/images/worklogos/petzcare.png',
+			image: '/assets/images/worklogos/github.png',
 			title: 'Petz Care',
 			text: 'Nonprofit aiming to fill the gap within the animal care industry. We aim to create a platform to connect verified professionals with pet owners to provide them with professional online advice.',
 			tech: [
@@ -52,45 +89,22 @@ export default function ProjectList() {
 				'Firebase',
 				'Styled Components'
 			],
-			wip: true
-		},
-		{
-			image: '/assets/images/worklogos/sigmoidhackslogo.png',
-			title: 'Sigmoid Hacks 1.0',
-			text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
-			tech: [
-				'Next.js',
-				'Emotion',
-				'Styled Components',
-				'Firebase',
-				'Framer-Motion'
-			],
-			wip: false
-		},
-		{
-			image: '/assets/images/worklogos/bytelogo.png',
-			title: 'Byte',
-			text: 'Reinventing how hackathons are run forever by making a more inclusive and rewarding experience and interface!',
-			tech: [
-				'Next.js',
-				'balloon-css',
-				'Sass',
-				'Firebase',
-				'CKEditor',
-				'Algolia'
-			],
-			wip: true
+			wip: true,
+			live: '',
+			github: ''
 		},
 
 		{
-			image: '/assets/images/worklogos/carbonemissions.png',
+			image: '/assets/images/worklogos/github.png',
 			title: 'Carbon (E)missions',
 			text: 'Project for Irvine Hacks 2020. A platform for users to track their carbon footprint from their vehicle use.',
 			tech: ['HTML', 'SCSS', 'Node.js', 'JQuery', 'Google Maps API'],
-			wip: false
+			wip: false,
+			live: 'https://irvinehak2020.netlify.com/',
+			github: 'https://github.com/aditya1rawat/IrvineHacks2020Project'
 		},
 		{
-			image: '/assets/images/worklogos/covidcentral.png',
+			image: '/assets/images/worklogos/github.png',
 			title: 'COVID Central',
 			text: 'Project for Hack Quarantine 2020. A platform for users to learn about the COVID situation, both locally and globally.',
 			tech: [
@@ -101,7 +115,9 @@ export default function ProjectList() {
 				'News API',
 				'LeafletJS'
 			],
-			wip: false
+			wip: false,
+			live: 'https://covidcentral.netlify.com/',
+			github: 'https://github.com/aditya1rawat/Hack-Quarantine-2020-Project'
 		}
 	];
 
@@ -121,6 +137,8 @@ export default function ProjectList() {
 						text={project.text}
 						techArray={project.tech}
 						wip={project.wip}
+						live={project.live}
+						github={project.github}
 					/>
 				);
 			})}
