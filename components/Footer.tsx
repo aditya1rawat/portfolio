@@ -53,9 +53,14 @@ export default function Footer() {
 					alignItems={'flex-end'}
 					gap={'1.8rem'}
 				>
-					<Link href='/#'>Discord</Link>
-					<Link href='/#'>Resume</Link>
-					<Link href='https://medium.com/@aditya1rawat'>Writing</Link>
+					<a
+						href='https://www.linkedin.com/in/aditya1rawat/'
+						target='_blank'
+					>
+						LinkedIn
+					</a>
+					<a href='/#'>Resume</a>
+					<a href='https://medium.com/@aditya1rawat'>Writing</a>
 				</Flex>
 			</Flex>
 			<Flex justifyContent={'space-between'} alignItems={'center'}>

@@ -22,14 +22,14 @@ const Contact: NextPage = () => {
 			<Heading as={'h2'} mt='3' mb='10'>
 				Contact & Reach Out!
 			</Heading>
-			<SimpleGrid columns={2} spacing='24'>
+			<SimpleGrid columns={{ base: 1, lg: 2 }} spacing='24'>
 				<Box
 					background={'#fff'}
 					_dark={{ background: '#000' }}
 					padding='10'
 					borderRadius={10}
 				>
-					<Text mt={20}>Currently open for new clients.</Text>
+					<Text>Currently open for new clients.</Text>
 					<Text mt={10}>
 						Always available for oppurtunities with startups,
 						companies, and agencies.
