@@ -56,6 +56,7 @@ export default function Footer() {
 					<a
 						href='https://www.linkedin.com/in/aditya1rawat/'
 						target='_blank'
+						rel='noreferrer'
 					>
 						LinkedIn
 					</a>

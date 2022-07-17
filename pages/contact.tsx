@@ -98,6 +98,7 @@ const Contact: NextPage = () => {
 									'https://www.instagram.com/aditya_rawhaaat/'
 								}
 								target='_blank'
+								rel='noreferrer'
 							>
 								<IconButton
 									variant={'outline'}
