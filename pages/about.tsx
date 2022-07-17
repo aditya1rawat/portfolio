@@ -25,8 +25,8 @@ const About: NextPage = () => {
 			<Text my='5'>
 				I began my journey as a programmer early in elementary school
 				originally diving straight into software engineering. Over time,
-				I began to learn web devleopment which, because of it's visual
-				product and appeal, became my passion.
+				I began to learn web devleopment which, because of it&apos;s
+				visual product and appeal, became my passion.
 			</Text>
 			<Text my='5'>
 				I began by making small websites which were all mostly static,
