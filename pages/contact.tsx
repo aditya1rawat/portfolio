@@ -15,11 +15,20 @@ import { NextPage } from 'next';
 import { FiExternalLink, FiInstagram, FiMail } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
 import { IoIosPaper } from 'react-icons/io';
+import Head from 'next/head';
 
 const Contact: NextPage = () => {
 	const toast = useToast();
 	return (
 		<Box width={'full'}>
+			<Head>
+				<title>Aditya Rawat.</title>
+				<meta
+					name='description'
+					content='Web Developer. Software Engineer. High Schooler. Among Other Things.'
+				/>
+				<link rel='icon' href='assets/images/me/nyucenter.jpg' />
+			</Head>
 			<Heading as={'h2'} mt='3' mb='10'>
 				Contact & Reach Out!
 			</Heading>

@@ -7,11 +7,20 @@ import {
 	Text
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
+import Head from 'next/head';
 import Tech from '../components/About/tech';
 
 const About: NextPage = () => {
 	return (
-		<Box>
+		<Box w='full'>
+			<Head>
+				<title>Aditya Rawat.</title>
+				<meta
+					name='description'
+					content='Web Developer. Software Engineer. High Schooler. Among Other Things.'
+				/>
+				<link rel='icon' href='assets/images/me/nyucenter.jpg' />
+			</Head>
 			<Image
 				src={'/assets/images/me/nyucenter.jpg'}
 				alt={'Picture of Aditya Rawat'}
