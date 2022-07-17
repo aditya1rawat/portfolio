@@ -7,6 +7,7 @@ import {
 	SimpleGrid,
 	Stack,
 	Text,
+	Tooltip,
 	useColorModeValue,
 	useToast
 } from '@chakra-ui/react';
@@ -29,7 +30,9 @@ const Contact: NextPage = () => {
 					padding='10'
 					borderRadius={10}
 				>
-					<Text>Currently open for new clients.</Text>
+					<Heading size={'md'}>
+						<strong>Currently open for new clients.</strong>
+					</Heading>
 					<Text mt={10}>
 						Always available for oppurtunities with startups,
 						companies, and agencies.
@@ -49,9 +52,28 @@ const Contact: NextPage = () => {
 					<Heading fontSize={'25px'} mb={5}>
 						Contact Via:
 					</Heading>
-					<SimpleGrid columns={2} gap={10}>
-						<Box>
-							<a href={'mailto:aditya1rawat@gmail.com'}>
+					<SimpleGrid columns={2} gap={12} justifyItems='center'>
+						<Tooltip label='Email' placement='top'>
+							<Box>
+								<a href={'mailto:aditya1rawat@gmail.com'}>
+									<IconButton
+										variant={'outline'}
+										borderWidth={'3px'}
+										borderColor={useColorModeValue(
+											'black',
+											'white'
+										)}
+										icon={<FiMail />}
+										fontSize={50}
+										padding='10'
+										py='16'
+										aria-label={'email'}
+									/>
+								</a>
+							</Box>
+						</Tooltip>
+						<Tooltip label='Discord' placement='top'>
+							<Box>
 								<IconButton
 									variant={'outline'}
 									borderWidth={'3px'}
@@ -59,94 +81,83 @@ const Contact: NextPage = () => {
 										'black',
 										'white'
 									)}
-									icon={<FiMail />}
+									icon={<SiDiscord />}
 									fontSize={50}
 									padding='10'
 									py='16'
-									aria-label={'email'}
+									onClick={() => {
+										navigator.clipboard.writeText(
+											'rupert#5332'
+										);
+										toast({
+											render: () => (
+												<Box
+													p={3}
+													color='black'
+													background='#04ce41'
+													borderRadius={5}
+												>
+													Discord Username Copied
+												</Box>
+											),
+											position: 'bottom',
+											isClosable: true,
+											duration: 2000
+										});
+									}}
+									aria-label={'discord'}
 								/>
-							</a>
-						</Box>
-						<Box>
-							<IconButton
-								variant={'outline'}
-								borderWidth={'3px'}
-								borderColor={useColorModeValue(
-									'black',
-									'white'
-								)}
-								icon={<SiDiscord />}
-								fontSize={50}
-								padding='10'
-								py='16'
-								onClick={() => {
-									navigator.clipboard.writeText(
-										'rupert#5332'
-									);
-									toast({
-										render: () => (
-											<Box
-												p={3}
-												color='black'
-												background='#04ce41'
-												borderRadius={5}
-											>
-												Discord Username Copied
-											</Box>
-										),
-										position: 'bottom',
-										isClosable: true,
-										duration: 2000
-									});
-								}}
-								aria-label={'discord'}
-							/>
-						</Box>
-						<Box>
-							<a
-								href={
-									'https://www.instagram.com/aditya_rawhaaat/'
-								}
-								target='_blank'
-								rel='noreferrer'
-							>
-								<IconButton
-									variant={'outline'}
-									borderWidth={'3px'}
-									borderColor={useColorModeValue(
-										'black',
-										'white'
-									)}
-									icon={<FiInstagram />}
-									fontSize={50}
-									padding='10'
-									py='16'
-									aria-label={'Instagram'}
-								/>
-							</a>
-						</Box>
+							</Box>
+						</Tooltip>
+						<Tooltip label='Instagram' placement='bottom'>
+							<Box>
+								<a
+									href={
+										'https://www.instagram.com/aditya_rawhaaat/'
+									}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<IconButton
+										variant={'outline'}
+										borderWidth={'3px'}
+										borderColor={useColorModeValue(
+											'black',
+											'white'
+										)}
+										icon={<FiInstagram />}
+										fontSize={50}
+										padding='10'
+										py='16'
+										aria-label={'Instagram'}
+									/>
+								</a>
+							</Box>
+						</Tooltip>
 
-						<Box>
-							<a
-								href={'/assets/Aditya Rawat - Resume.pdf'}
-								target='_blank'
-								rel='noreferrer'
-							>
-								<IconButton
-									variant={'outline'}
-									borderWidth={'3px'}
-									borderColor={useColorModeValue(
-										'black',
-										'white'
-									)}
-									icon={<IoIosPaper />}
-									fontSize={50}
-									padding='10'
-									py='16'
-									aria-label={'Resume'}
-								/>
-							</a>
-						</Box>
+						<Tooltip label='Resume' placement='bottom'>
+							<Box>
+								<a
+									href={'/assets/Aditya Rawat - Resume.pdf'}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<IconButton
+										variant={'outline'}
+										borderWidth={'3px'}
+										borderColor={useColorModeValue(
+											'black',
+											'white'
+										)}
+										icon={<IoIosPaper />}
+										fontSize={50}
+										padding='10'
+										py='16'
+										aria-label={'Resume'}
+									/>
+								</a>
+							</Box>
+						</Tooltip>
 					</SimpleGrid>
 				</Box>
 			</SimpleGrid>

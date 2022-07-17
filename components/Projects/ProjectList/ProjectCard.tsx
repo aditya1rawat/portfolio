@@ -72,7 +72,6 @@ export default function ProjectCard(props: ProjectCardProps) {
 						>
 							<Stack direction={'row'}>
 								<Heading size='md'>{props.title}</Heading>
-								{console.log(props.wip)}
 								{props.wip ? (
 									<Tag size='md'>
 										<TagLabel>WIP</TagLabel>

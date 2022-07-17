@@ -88,11 +88,11 @@ export default function Hero() {
 							a freelance web developer
 						</RoughNotation>{' '}
 						and have worked with various startups and companies. I
-						currently attend high school in SoCal driven to pursue a
-						future in Computer Science.
+						am currently a senior attending high school in SoCal,
+						and currently pursuing a future in computer science.
 					</Text>
 				</RoughNotationGroup>
-				<SimpleGrid columns={3} gap={3}>
+				<SimpleGrid columns={3} gap={3} justifyItems={'center'}>
 					<a
 						href='https://github.com/aditya1rawat/'
 						target='_blank'

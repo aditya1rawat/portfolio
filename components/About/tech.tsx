@@ -89,7 +89,7 @@ export default function Tech() {
 			<Heading as={'h3'} size='md' mt='10' mb='2'>
 				Languages I Know & Use
 			</Heading>
-			<SimpleGrid columns={6} spacing={5} pt={3}>
+			<SimpleGrid columns={6} spacing={5} pt={3} justifyItems='center'>
 				{languages.map(language => {
 					return (
 						<Tooltip label={language.name} key={language.name}>
@@ -109,7 +109,7 @@ export default function Tech() {
 			<Heading as={'h3'} size='md' mt='10' mb='2'>
 				Services & Frameworks I Know & Use
 			</Heading>
-			<SimpleGrid columns={9} spacing={5} pt={3}>
+			<SimpleGrid columns={9} spacing={3} pt={3} justifyItems='center'>
 				{servicesTech.map(service => {
 					return (
 						<Tooltip label={service.name} key={service.name}>
@@ -130,7 +130,12 @@ export default function Tech() {
 			<Heading as={'h3'} size='md' mt='10' mb='2'>
 				Currently Learning
 			</Heading>
-			<SimpleGrid minChildWidth='120px' spacing='40px' pt={3}>
+			<SimpleGrid
+				minChildWidth='120px'
+				spacing='40px'
+				pt={3}
+				justifyItems='center'
+			>
 				{currentlyLearning.map(learning => {
 					return (
 						<Tooltip label={learning.name} key={learning.name}>
