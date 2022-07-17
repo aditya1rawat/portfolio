@@ -22,7 +22,9 @@ export default function Contact() {
 				borderRadius='15px'
 				borderColor={useColorModeValue('black', 'white')}
 			>
-				<Heading as={'h2'}>Need A Website?</Heading>
+				<Heading as={'h2'} overflowWrap='break-word'>
+					Need A Website?
+				</Heading>
 				<Text my={5} fontSize='lg'>
 					I am always ecstatic to work with any startup, company,
 					and/or agency

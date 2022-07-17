@@ -26,7 +26,16 @@ export default function Hero() {
 			direction={{ base: 'column-reverse', md: 'row' }}
 			as='section'
 		>
-			<VStack spacing={3} alignItems='flex-start' w='full'>
+			<VStack
+				spacing={3}
+				alignItems={{
+					base: 'stretch',
+					xl: 'flex-start',
+					lg: 'flex-start'
+				}}
+				w='full'
+				className='poopy-pants'
+			>
 				<Stack
 					spacing={3}
 					w='full'
@@ -54,34 +63,35 @@ export default function Hero() {
 						I’m Aditya Rawat.
 					</Heading>
 				</Stack>
-				<Text lineHeight='170%' as='h2'>
-					I am a{' '}
-					<RoughNotation
-						type='highlight'
-						color='#f57f17'
-						animationDuration={1500}
-						multiline
-						show
-					>
-						self-taught full-stack web developer and designer
-					</RoughNotation>{' '}
-					creating anything from small hackathon projects to complex,
-					full-fledged applications. I work as{' '}
-					<RoughNotation
-						type='box'
-						// brackets={['left', 'right']}
-						// padding={'5px'}
-						color='#bf360c'
-						strokeWidth={'2px'}
-						animationDuration={1500}
-						show
-					>
-						a freelance web developer
-					</RoughNotation>{' '}
-					and have worked with various startups and companies. I
-					currently attend high school in SoCal driven to pursue a
-					future in Computer Science.
-				</Text>
+				<RoughNotationGroup show>
+					<Text lineHeight='170%' as='h2'>
+						I am a{' '}
+						<RoughNotation
+							type='highlight'
+							color='#f57f17'
+							animationDuration={1500}
+							multiline
+						>
+							self-taught full-stack web developer and designer
+						</RoughNotation>{' '}
+						creating anything from small hackathon projects to
+						complex, full-fledged applications. I work as{' '}
+						<RoughNotation
+							type='box'
+							// brackets={['left', 'right']}
+							// padding={'5px'}
+							color='#bf360c'
+							strokeWidth={2}
+							animationDuration={1500}
+							multiline
+						>
+							a freelance web developer
+						</RoughNotation>{' '}
+						and have worked with various startups and companies. I
+						currently attend high school in SoCal driven to pursue a
+						future in Computer Science.
+					</Text>
+				</RoughNotationGroup>
 				<SimpleGrid columns={3} gap={3}>
 					<IconButton
 						aria-label='toggle theme'

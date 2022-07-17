@@ -29,7 +29,7 @@ export default function Header() {
 						About
 					</Button>
 				</NextLink>
-				<NextLink href='/work' passHref>
+				<NextLink href='/projects' passHref>
 					<Button size='sm' variant='ghost'>
 						Projects / Work
 					</Button>

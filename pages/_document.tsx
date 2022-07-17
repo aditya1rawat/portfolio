@@ -17,17 +17,17 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					<link
-						rel='preload'
+						rel='stylesheet preload prefetch'
 						href='/assets/fonts/DEVIS/Devis.otf'
-						as='font'
-						crossOrigin=''
+						as='style'
+						crossOrigin='anonymous'
 					/>
 
 					<link
-						rel='preload'
+						rel='stylesheet preload prefetch'
 						href='/assets/fonts/EB_Garamond/EBGaramond.ttf'
-						as='font'
-						crossOrigin=''
+						as='style'
+						crossOrigin='anonymous'
 					/>
 				</Head>
 				<body>

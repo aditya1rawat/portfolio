@@ -23,7 +23,7 @@ export default function Footer() {
 				>
 					<Link href='/'>Home</Link>
 					<Link href='/about'>About</Link>
-					<Link href='/work'>Projects</Link>
+					<Link href='/projects'>Projects</Link>
 				</Flex>
 				<Flex direction={'column'} alignItems={'center'} gap={'1.8rem'}>
 					<a

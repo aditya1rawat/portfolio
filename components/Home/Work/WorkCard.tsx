@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
 import NextLink from 'next/link';
 import { FiArrowUpRight, FiGithub } from 'react-icons/fi';
 
-export default function WorkCard({ image, text, title }: string) {
+export default function WorkCard({ image, title, text }: string) {
 	const iconColor = useColorModeValue('black', 'white');
 	return (
 		<motion.div whileHover={{ translateY: -5 }} key={title}>
@@ -50,7 +50,7 @@ export default function WorkCard({ image, text, title }: string) {
 						</AspectRatio>
 					</Box>
 
-					<NextLink href='/work' passHref>
+					<NextLink href='/projects' passHref>
 						<VStack
 							flex={1}
 							spacing={2}
