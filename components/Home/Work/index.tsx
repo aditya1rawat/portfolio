@@ -60,9 +60,9 @@ export default function Work() {
 						})}
 					</SimpleGrid>
 				</Stack>
-				<NextLink href='/work' passHref>
+				<NextLink href='/projects' passHref>
 					<Button rightIcon={<Icon as={FiArrowRight} />}>
-						All Work
+						All Projects
 					</Button>
 				</NextLink>
 			</VStack>

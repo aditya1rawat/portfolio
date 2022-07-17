@@ -93,21 +93,39 @@ export default function Hero() {
 					</Text>
 				</RoughNotationGroup>
 				<SimpleGrid columns={3} gap={3}>
-					<IconButton
-						aria-label='toggle theme'
-						icon={<FiGithub />}
-						variant='outline'
-					/>
-					<IconButton
-						aria-label='toggle theme'
-						icon={<FiMail />}
-						variant='outline'
-					/>
-					<IconButton
-						aria-label='toggle theme'
-						icon={<FiInstagram />}
-						variant='outline'
-					/>
+					<a
+						href='https://github.com/aditya1rawat/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<IconButton
+							aria-label='toggle theme'
+							icon={<FiGithub />}
+							variant='outline'
+						/>
+					</a>
+					<a
+						href='mailto:aditya1rawat@gmail.com'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<IconButton
+							aria-label='toggle theme'
+							icon={<FiMail />}
+							variant='outline'
+						/>
+					</a>
+					<a
+						href='https://www.instagram.com/aditya_rawhaaat/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<IconButton
+							aria-label='toggle theme'
+							icon={<FiInstagram />}
+							variant='outline'
+						/>
+					</a>
 				</SimpleGrid>
 				{/* <NextLink href='/about' passHref>
 					<Button rightIcon={<Icon as={FiArrowRight} />}>

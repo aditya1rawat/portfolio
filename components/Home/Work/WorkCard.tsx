@@ -56,18 +56,17 @@ export default function WorkCard(props: WorkCardProps) {
 						</AspectRatio>
 					</Box>
 
-					<NextLink href='/projects' passHref>
-						<VStack
-							flex={1}
-							spacing={2}
-							alignItems='flex-start'
-							justifyContent='flex-start'
-							color={useColorModeValue('black', 'white')}
-						>
-							<Heading size='md'>{props.title}</Heading>
-							<Text fontSize='sm'>{props.text}</Text>
-						</VStack>
-					</NextLink>
+					<VStack
+						flex={1}
+						spacing={2}
+						alignItems='flex-start'
+						justifyContent='flex-start'
+						color={useColorModeValue('black', 'white')}
+					>
+						<Heading size='md'>{props.title}</Heading>
+						<Text fontSize='sm'>{props.text}</Text>
+					</VStack>
+
 					<Flex direction={'row'} gap={'2'} mb='1' width={'full'}>
 						<IconButton
 							aria-label='Live Demo'

@@ -27,7 +27,8 @@ interface ProjectCardProps {
 	image: string;
 	title: string;
 	text: string;
-	techArray: string[];
+	techArray: Array<string>;
+	wip: boolean;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -62,23 +63,41 @@ export default function ProjectCard(props: ProjectCardProps) {
 							</AspectRatio>
 						</Box>
 
-						<NextLink href='/projects' passHref>
-							<VStack
-								flex={1}
-								spacing={2}
-								alignItems='flex-start'
-								justifyContent='flex-start'
-								color={useColorModeValue('black', 'white')}
-							>
+						<VStack
+							flex={1}
+							spacing={2}
+							alignItems='flex-start'
+							justifyContent='flex-start'
+							color={useColorModeValue('black', 'white')}
+						>
+							<Stack direction={'row'}>
 								<Heading size='md'>{props.title}</Heading>
-								<Text fontSize='sm'>{props.text}</Text>
-							</VStack>
-						</NextLink>
+								{console.log(props.wip)}
+								{props.wip ? (
+									<Tag size='md'>
+										<TagLabel>WIP</TagLabel>
+									</Tag>
+								) : null}
+							</Stack>
+							<Text fontSize='sm'>{props.text}</Text>
+						</VStack>
 
-						<Box>
-							<Tag key={'tech'} variant='solid' size='sm'>
-								<TagLabel>{'tech'}</TagLabel>
-							</Tag>
+						<Box flexDirection={'row'}>
+							{Object.values(props.techArray).map(tech => {
+								return (
+									<Tag
+										key={tech}
+										m='1'
+										variant='solid'
+										size='md'
+										bg='black'
+										color='white'
+										_dark={{ bg: 'white', color: 'black' }}
+									>
+										<TagLabel>{tech}</TagLabel>
+									</Tag>
+								);
+							})}
 						</Box>
 
 						<Flex direction={'row'} gap={'2'} mb='1' width={'full'}>

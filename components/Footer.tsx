@@ -41,7 +41,7 @@ export default function Footer() {
 						Email
 					</a>
 					<a
-						href='https://www.instagram.com/ad1tya_rawhaaat/'
+						href='https://www.instagram.com/aditya_rawhaaat/'
 						target='_blank'
 						rel='noreferrer'
 					>
