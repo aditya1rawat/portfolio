@@ -9,11 +9,12 @@ import {
 	Icon,
 	Button,
 	IconButton,
-	SimpleGrid
+	SimpleGrid,
+	Tooltip
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
+import { FiArrowUpRight, FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
 
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
@@ -92,14 +93,28 @@ export default function Hero() {
 						and currently pursuing a future in computer science.
 					</Text>
 				</RoughNotationGroup>
-				<SimpleGrid columns={3} gap={3} justifyItems={'center'}>
+
+				<Stack direction={'row'} justifyItems={'center'}>
+					<a
+						href='/assets/Aditya Rawat - Resume.pdf'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<Button
+							aria-label='Resume'
+							rightIcon={<FiArrowUpRight />}
+							variant='outline'
+						>
+							Resume
+						</Button>
+					</a>
 					<a
 						href='https://github.com/aditya1rawat/'
 						target='_blank'
 						rel='noreferrer'
 					>
 						<IconButton
-							aria-label='toggle theme'
+							aria-label='Github'
 							icon={<FiGithub />}
 							variant='outline'
 						/>
@@ -110,7 +125,7 @@ export default function Hero() {
 						rel='noreferrer'
 					>
 						<IconButton
-							aria-label='toggle theme'
+							aria-label='Email'
 							icon={<FiMail />}
 							variant='outline'
 						/>
@@ -121,17 +136,12 @@ export default function Hero() {
 						rel='noreferrer'
 					>
 						<IconButton
-							aria-label='toggle theme'
+							aria-label='Instagram'
 							icon={<FiInstagram />}
 							variant='outline'
 						/>
 					</a>
-				</SimpleGrid>
-				{/* <NextLink href='/about' passHref>
-					<Button rightIcon={<Icon as={FiArrowRight} />}>
-						More About Me
-					</Button>
-				</NextLink> */}
+				</Stack>
 			</VStack>
 			<AspectRatio flexShrink={0} ratio={1} w={56} h={56} as='figure'>
 				<Box>
