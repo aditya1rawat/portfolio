@@ -54,8 +54,8 @@ export default function ProjectList() {
 		{
 			image: '/assets/images/worklogos/nextjs.png',
 			title: 'E-Commerce Template',
-			text: 'Just a simple template for anyone trying to create an e-commerce site with Next.js and Sanity.',
-			tech: ['Next.js', 'Sanity', 'Styled Components', 'Framer-Motion'],
+			text: 'Just a simple template for anyone trying to create an e-commerce site with Next.js, Sanity, and Stripe.',
+			tech: ['Next.js', 'Sanity', 'Stripe', 'Framer-Motion'],
 			wip: false,
 			live: 'https://adaptive-ecommerce-template.vercel.app/',
 			github: 'https://github.com/aditya1rawat/adaptive-ecommerce-template'
