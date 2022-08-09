@@ -28,6 +28,15 @@ export default function ProjectList() {
 			github: 'https://github.com/aditya1rawat/onpointsite2.0'
 		},
 		{
+			image: '/assets/images/worklogos/aviato.png',
+			title: 'Aviato',
+			text: 'Pitching to funds directly anywhere, anytime. All it takes is two taps and a 1 minute video pitch.(Commissioned Project)',
+			tech: ['Next.js', 'Chakra-UI', 'Framer-Motion', 'Emotion-Styled'],
+			wip: false,
+			live: 'https://aviato-landing.vercel.app/',
+			github: ''
+		},
+		{
 			image: '/assets/images/worklogos/sigmoidhackslogo.png',
 			title: 'Sigmoid Hacks 1.0',
 			text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
@@ -41,6 +50,15 @@ export default function ProjectList() {
 			wip: false,
 			live: 'https://www.sigmoidhacks.org/',
 			github: 'https://github.com/SigmoidHacks/site'
+		},
+		{
+			image: '/assets/images/worklogos/nextjs.png',
+			title: 'E-Commerce Template',
+			text: 'Just a simple template for anyone trying to create an e-commerce site with Next.js and Sanity.',
+			tech: ['Next.js', 'Sanity', 'Styled Components', 'Framer-Motion'],
+			wip: false,
+			live: 'https://adaptive-ecommerce-template.vercel.app/',
+			github: 'https://github.com/aditya1rawat/adaptive-ecommerce-template'
 		},
 		{
 			image: '/assets/images/worklogos/bytelogo.png',
