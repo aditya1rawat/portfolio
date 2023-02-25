@@ -147,7 +147,9 @@ const Contact: NextPage = () => {
 						<Tooltip label='Resume' placement='bottom'>
 							<Box>
 								<a
-									href={'/assets/Aditya Rawat - Resume.pdf'}
+									href={
+										'/assets/Aditya Rawat - Resume-Updated.pdf'
+									}
 									target='_blank'
 									rel='noreferrer'
 								>
