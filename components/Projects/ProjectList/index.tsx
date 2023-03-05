@@ -4,6 +4,47 @@ import ProjectCard from './ProjectCard';
 export default function ProjectList() {
 	const projects = [
 		{
+			image: '/assets/images/worklogos/memorizeai.jpg',
+			title: 'Memorize.ai',
+			text: 'The ultimate memorization tool for all students, merging spaced repeition with Artificial Intelligence and Machine Learning',
+			tech: [
+				'Next.js',
+				'CK Editor',
+				'Firebase',
+				'BalloonCSS',
+				'SASS',
+				'Recoil',
+				'Axios'
+			],
+			wip: false,
+			live: 'https://memorize.ai/',
+			github: 'https://github.com/memorize-ai'
+		},
+		{
+			image: '/assets/images/worklogos/codeorange.png',
+			title: 'FRC Team 3476: Code Orange',
+			text: 'Robotics team where I helped design and program the robot and design, develop, and maintain the team website and scouting system',
+			tech: ['Java', 'WPILib', 'Bootstrap', 'Javascript', 'PHP', 'SQL'],
+			wip: false,
+			live: 'https://www.sigmoidhacks.org/',
+			github: 'https://github.com/SigmoidHacks/site'
+		},
+		{
+			image: '/assets/images/worklogos/sigmoidhackslogo.png',
+			title: 'Sigmoid Hacks 1.0',
+			text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
+			tech: [
+				'Next.js',
+				'Emotion',
+				'Styled Components',
+				'Firebase',
+				'Framer-Motion'
+			],
+			wip: false,
+			live: 'https://www.sigmoidhacks.org/',
+			github: 'https://github.com/SigmoidHacks/site'
+		},
+		{
 			image: '/assets/images/worklogos/onpointlogo.png',
 			title: 'OnPoint v1.0',
 			text: 'A platform for teenagers to create quality media about the modern world to educate and inform the public. v1.0',
@@ -36,21 +77,7 @@ export default function ProjectList() {
 			live: 'https://aviato-landing.vercel.app/',
 			github: ''
 		},
-		{
-			image: '/assets/images/worklogos/sigmoidhackslogo.png',
-			title: 'Sigmoid Hacks 1.0',
-			text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
-			tech: [
-				'Next.js',
-				'Emotion',
-				'Styled Components',
-				'Firebase',
-				'Framer-Motion'
-			],
-			wip: false,
-			live: 'https://www.sigmoidhacks.org/',
-			github: 'https://github.com/SigmoidHacks/site'
-		},
+
 		{
 			image: '/assets/images/worklogos/nextjs.png',
 			title: 'E-Commerce Template',
