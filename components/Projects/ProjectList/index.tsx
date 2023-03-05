@@ -32,7 +32,7 @@ export default function ProjectList() {
 		{
 			image: '/assets/images/worklogos/sigmoidhackslogo.png',
 			title: 'Sigmoid Hacks 1.0',
-			text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
+			text: 'Machine Learning doesnt have to be just another buzz word, make it real with Sigmoid Hacks!',
 			tech: [
 				'Next.js',
 				'Emotion',
