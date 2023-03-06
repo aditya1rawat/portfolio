@@ -26,8 +26,8 @@ export default function ProjectList() {
 			text: 'Robotics team where I helped design and program the robot and design, develop, and maintain the team website and scouting system',
 			tech: ['Java', 'WPILib', 'Bootstrap', 'Javascript', 'PHP', 'SQL'],
 			wip: false,
-			live: 'https://www.sigmoidhacks.org/',
-			github: 'https://github.com/SigmoidHacks/site'
+			live: 'https://www.teamcodeorange.com/',
+			github: 'https://github.com/FRC3476'
 		},
 		{
 			image: '/assets/images/worklogos/sigmoidhackslogo.png',
