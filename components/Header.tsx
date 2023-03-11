@@ -34,6 +34,11 @@ export default function Header() {
 						Projects / Work
 					</Button>
 				</NextLink>
+				<NextLink href='/blog' passHref>
+					<Button size='sm' variant='ghost'>
+						Blog
+					</Button>
+				</NextLink>
 				<NextLink href='/contact' passHref>
 					<Button size='sm' variant='ghost'>
 						Contact
