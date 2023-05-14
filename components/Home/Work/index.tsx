@@ -21,18 +21,18 @@ const projects = [
 		github: 'https://github.com/aditya1rawat/onpointsite2.0'
 	},
 	{
+		image: '/assets/images/worklogos/memorizeai.jpg',
+		title: 'Memorize.ai',
+		text: 'The ultimate memorization tool for all students, merging spaced repeition with Artificial Intelligence and Machine Learning',
+		live: 'https://memorize.ai/',
+		github: 'https://github.com/memorize-ai'
+	},
+	{
 		image: '/assets/images/worklogos/sigmoidhackslogo.png',
 		title: 'Sigmoid Hacks 1.0',
 		text: 'Machine Learning doesn’t have to be just another buzz word, make it real with Sigmoid Hacks!',
-		live: 'https://www.sigmoidhacks.org/',
+		live: 'https://sigmoidhackssite-oku05ryjt-aditya1rawat.vercel.app/',
 		github: 'https://github.com/SigmoidHacks/site'
-	},
-	{
-		image: '/assets/images/worklogos/bytelogo.png',
-		title: 'Byte',
-		text: 'Reinventing how hackathons are run forever by making a more inclusive and rewarding experience and interface!',
-		live: 'https://bytebuild.vercel.app/',
-		github: 'https://github.com/byte-build/web'
 	}
 ];
 

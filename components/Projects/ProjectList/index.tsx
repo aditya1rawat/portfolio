@@ -41,7 +41,7 @@ export default function ProjectList() {
 				'Framer-Motion'
 			],
 			wip: false,
-			live: 'https://www.sigmoidhacks.org/',
+			live: 'https://sigmoidhackssite-oku05ryjt-aditya1rawat.vercel.app',
 			github: 'https://github.com/SigmoidHacks/site'
 		},
 		{
