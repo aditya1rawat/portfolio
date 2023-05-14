@@ -61,7 +61,7 @@ export default function Footer() {
 						LinkedIn
 					</a>
 					<a
-						href='/assets/Aditya Rawat - Resume-Updated.pdf'
+						href='/assets/Aditya Rawat - Resume.pdf'
 						target='_blank'
 						rel='noreferrer'
 					>

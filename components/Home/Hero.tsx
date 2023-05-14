@@ -100,7 +100,7 @@ export default function Hero() {
 
 				<Stack direction={'row'} justifyContent={'center'}>
 					<a
-						href='/assets/Aditya Rawat - Resume-Updated.pdf'
+						href='/assets/Aditya Rawat - Resume.pdf'
 						target='_blank'
 						rel='noreferrer'
 					>
