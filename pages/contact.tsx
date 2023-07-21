@@ -12,7 +12,7 @@ import {
 	useToast
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
-import { FiExternalLink, FiInstagram, FiMail } from 'react-icons/fi';
+import { FiExternalLink, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
 import { IoIosPaper } from 'react-icons/io';
 import Head from 'next/head';
@@ -144,10 +144,10 @@ const Contact: NextPage = () => {
 							</Box>
 						</Tooltip>
 
-						<Tooltip label='Resume' placement='bottom'>
+						<Tooltip label='LinkedIn' placement='bottom'>
 							<Box>
 								<a
-									href={'/assets/Aditya Rawat - Resume.pdf'}
+									href={'https://www.linkedin.com/in/aditya1rawat/'}
 									target='_blank'
 									rel='noreferrer'
 								>
@@ -158,11 +158,11 @@ const Contact: NextPage = () => {
 											'black',
 											'white'
 										)}
-										icon={<IoIosPaper />}
+										icon={<FiLinkedin />}
 										fontSize={50}
 										padding='10'
 										py='16'
-										aria-label={'Resume'}
+										aria-label={'LinkedIn'}
 									/>
 								</a>
 							</Box>

@@ -14,7 +14,13 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { motion } from 'framer-motion';
-import { FiArrowUpRight, FiGithub, FiInstagram, FiMail } from 'react-icons/fi';
+import {
+	FiArrowUpRight,
+	FiGithub,
+	FiInstagram,
+	FiLinkedin,
+	FiMail
+} from 'react-icons/fi';
 
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
@@ -120,6 +126,17 @@ export default function Hero() {
 						<IconButton
 							aria-label='Github'
 							icon={<FiGithub />}
+							variant='outline'
+						/>
+					</a>
+					<a
+						href='https://www.linkedin.com/in/aditya1rawat/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<IconButton
+							aria-label='LinkedIn'
+							icon={<FiLinkedin />}
 							variant='outline'
 						/>
 					</a>
