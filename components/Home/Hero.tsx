@@ -83,7 +83,7 @@ export default function Hero() {
 							animationDuration={1500}
 							multiline
 						>
-							self-taught full-stack web developer and designer
+							full-stack web developer, software engineer, and researcher
 						</RoughNotation>{' '}
 						creating anything from small hackathon projects to
 						complex, full-fledged applications. I work as{' '}
@@ -99,7 +99,7 @@ export default function Hero() {
 							a freelance web developer
 						</RoughNotation>{' '}
 						and have worked with various startups and companies. I
-						am currently a senior attending high school in SoCal
+						am currently an upcoming freshman at the University of Wisconsin, Madison
 						actively pursuing a future in computer science.
 					</Text>
 				</RoughNotationGroup>
