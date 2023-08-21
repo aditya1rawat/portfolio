@@ -30,6 +30,7 @@ interface ProjectCardProps {
 	text: string;
 	techArray: Array<string>;
 	wip: boolean;
+	deprecated: boolean;
 	live: string;
 	github: string;
 }
@@ -78,6 +79,11 @@ export default function ProjectCard(props: ProjectCardProps) {
 								{props.wip ? (
 									<Tag size='md'>
 										<TagLabel>WIP</TagLabel>
+									</Tag>
+								) : null}
+								{props.deprecated ? (
+									<Tag size='md'>
+										<TagLabel>Deprecated</TagLabel>
 									</Tag>
 								) : null}
 							</Stack>

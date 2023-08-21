@@ -45,6 +45,20 @@ export default function ProjectList() {
 			github: 'https://github.com/SigmoidHacks/site'
 		},
 		{
+			image: '/assets/images/worklogos/insuremed.png',
+			title: 'Insure-Med',
+			text: 'Project for HackOC 2023. Web application that lets users use their insurance providers to make informed decisions regarding their healthcare.',
+			tech: [
+				'Next.js',
+				'Chakra-UI',
+				'MongoDB Atlas',
+				'Next-Auth'
+			],
+			wip: false,
+			live: 'https://insure-med.vercel.app/',
+			github: 'https://github.com/aditya1rawat/Hack-Quarantine-2020-Project'
+		},
+		{
 			image: '/assets/images/worklogos/onpointlogo.png',
 			title: 'OnPoint v1.0',
 			text: 'A platform for teenagers to create quality media about the modern world to educate and inform the public. v1.0',
@@ -105,40 +119,20 @@ export default function ProjectList() {
 		},
 		{
 			image: '/assets/images/worklogos/github.png',
-			title: 'Retina OCT',
-			text: 'Using machine learning and artificial intelligence to help doctors diagnose and treat patients with retinal diseases.',
+			title: 'COVID Central',
+			text: 'Project for Hack Quarantine 2020. A platform for users to learn about the COVID situation, both locally and globally.',
 			tech: [
-				'React Native',
-				'Typescript',
-				'Node.js',
-				'PostgreSQL',
-				'GraphQL',
-				'Typeform',
-				'URQL',
-				'Firebase',
-				'Tensorflow.js',
-				'Expo'
+				'HTML',
+				'SCSS',
+				'MongoDB Atlas',
+				'Radar.io',
+				'News API',
+				'LeafletJS'
 			],
-			wip: true,
-			live: '',
-			github: 'https://github.com/retinaoct'
+			wip: false,
+			live: 'https://covidcentral.netlify.com/',
+			github: 'https://github.com/aditya1rawat/Hack-Quarantine-2020-Project'
 		},
-		{
-			image: '/assets/images/worklogos/github.png',
-			title: 'Petz Care',
-			text: 'Nonprofit aiming to fill the gap within the animal care industry. We aim to create a platform to connect verified professionals with pet owners to provide them with professional online advice.',
-			tech: [
-				'React.js',
-				'AWS',
-				'Node.js',
-				'Firebase',
-				'Styled Components'
-			],
-			wip: true,
-			live: '',
-			github: ''
-		},
-
 		{
 			image: '/assets/images/worklogos/github.png',
 			title: 'Carbon (E)missions',
@@ -163,6 +157,41 @@ export default function ProjectList() {
 			wip: false,
 			live: 'https://covidcentral.netlify.com/',
 			github: 'https://github.com/aditya1rawat/Hack-Quarantine-2020-Project'
+		},
+		{
+			image: '/assets/images/worklogos/github.png',
+			title: 'Retina OCT',
+			text: 'Using machine learning and artificial intelligence to help doctors diagnose and treat patients with retinal diseases.',
+			tech: [
+				'React Native',
+				'Typescript',
+				'Node.js',
+				'PostgreSQL',
+				'GraphQL',
+				'Typeform',
+				'URQL',
+				'Firebase',
+				'Tensorflow.js',
+				'Expo'
+			],
+			deprecated: true,
+			live: '',
+			github: ''
+		},
+		{
+			image: '/assets/images/worklogos/github.png',
+			title: 'Petz Care',
+			text: 'Nonprofit aiming to fill the gap within the animal care industry. We aim to create a platform to connect verified professionals with pet owners to provide them with professional online advice.',
+			tech: [
+				'React.js',
+				'AWS',
+				'Node.js',
+				'Firebase',
+				'Styled Components'
+			],
+			deprecated: true,
+			live: '',
+			github: ''
 		}
 	];
 
