@@ -30,7 +30,8 @@ interface ProjectCardProps {
 	text: string;
 	techArray: Array<string>;
 	wip: boolean;
-	deprecated: boolean;
+	internship: boolean;
+	commissioned: boolean;
 	live: string;
 	github: string;
 }
@@ -81,9 +82,14 @@ export default function ProjectCard(props: ProjectCardProps) {
 										<TagLabel>WIP</TagLabel>
 									</Tag>
 								) : null}
-								{props.deprecated ? (
+								{props.internship ? (
 									<Tag size='md'>
-										<TagLabel>Deprecated</TagLabel>
+										<TagLabel>Internship</TagLabel>
+									</Tag>
+								) : null}
+								{props.commissioned ? (
+									<Tag size='md'>
+										<TagLabel>Commissioned</TagLabel>
 									</Tag>
 								) : null}
 							</Stack>

@@ -1,8 +1,9 @@
-import { PropsWithChildren } from 'react';
-import { VStack, Container, Box } from '@chakra-ui/react';
+import { PropsWithChildren, useEffect } from 'react';
+import { VStack, Container, Box, useColorModeValue } from '@chakra-ui/react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import NextNProgress from 'nextjs-progressbar';
 
 const Layout = ({ children }: PropsWithChildren<{}>) => {
 	return (

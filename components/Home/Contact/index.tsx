@@ -28,10 +28,9 @@ export default function Contact() {
 					borderRadius='15px'
 					background={useColorModeValue('white', 'black')}
 				>
-					<Heading as={'h2'}>Need A Website?</Heading>
+					<Heading as={'h2'}>Want to work together?</Heading>
 					<Text my={5} fontSize='lg' textAlign={'center'}>
-						I am always ecstatic to work with any startup, company,
-						and/or agency
+						I am always ecstatic for new opportunities to learn, grow, and expand my skillset
 					</Text>
 					<NextLink href='/contact' passHref>
 						<Button rightIcon={<FiArrowRight />}>Reach Out</Button>

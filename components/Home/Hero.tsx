@@ -10,7 +10,11 @@ import {
 	Button,
 	IconButton,
 	SimpleGrid,
-	Tooltip
+	Tooltip,
+	Badge,
+	Tag,
+	TagRightIcon,
+	useColorModeValue
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { motion } from 'framer-motion';
@@ -78,16 +82,6 @@ export default function Hero() {
 					>
 						I am a{' '}
 						<RoughNotation
-							type='highlight'
-							color='#f57f17'
-							animationDuration={1500}
-							multiline
-						>
-							full-stack web developer, software engineer, and researcher
-						</RoughNotation>{' '}
-						creating anything from small hackathon projects to
-						complex, full-fledged applications. I work as{' '}
-						<RoughNotation
 							type='box'
 							// brackets={['left', 'right']}
 							// padding={'5px'}
@@ -96,11 +90,45 @@ export default function Hero() {
 							animationDuration={1500}
 							multiline
 						>
-							a freelance web developer
+							full-stack developer, software engineer, and
+							researcher
 						</RoughNotation>{' '}
-						and have worked with various startups and companies. I
-						am currently an upcoming freshman at the University of Wisconsin, Madison
-						actively pursuing a future in computer science.
+						creating anything from small hackathon projects to
+						complex, full-fledged applications. Most recently,
+						I&apos;ve worked as{' '}
+						<RoughNotation
+							type='highlight'
+							color='#f57f17'
+							animationDuration={1500}
+							multiline
+						>
+							a fullstack developer intern
+						</RoughNotation>{' '}
+						at{' '}
+						<Tag
+							as='a'
+							href='https://www.kamunity.io/'
+							target={'_blank'}
+							ml={'0'}
+							mt={'0.5'}
+							py={'0.5'}
+							bg={useColorModeValue('white', 'black')}
+							color={useColorModeValue('black', 'white')}
+							_hover={{
+								transition: '0.3s ease-in-out',
+								backgroundColor: useColorModeValue(
+									'black',
+									'white'
+								),
+								color: useColorModeValue('white', 'black')
+							}}
+						>
+							Kamunity.io
+							<TagRightIcon as={FiArrowUpRight} ml={'1'} />
+						</Tag>
+						. I am currently a freshman at the University of
+						Wisconsin, Madison actively pursuing a future in
+						computer science.
 					</Text>
 				</RoughNotationGroup>
 

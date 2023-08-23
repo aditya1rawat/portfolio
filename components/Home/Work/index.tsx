@@ -14,11 +14,11 @@ import WorkCard from './WorkCard';
 
 const projects = [
 	{
-		image: '/assets/images/worklogos/onpointlogo.png',
-		title: 'OnPoint v2.0',
-		text: 'A platform for teenagers to create quality media about the modern world to educate and inform the public.',
-		live: 'https://onpointsitev2.vercel.app/',
-		github: 'https://github.com/aditya1rawat/onpointsite2.0'
+		image: '/assets/images/worklogos/kamunity.jpg',
+		title: 'Kamunity.io',
+		text: 'A platform that brings like-minded people together, to learn from one another, and enhance their financial fulfillment',
+		live: 'https://www.kamunity.io/',
+		github: 'https://github.com/kamunity-io'
 	},
 	{
 		image: '/assets/images/worklogos/memorizeai.jpg',
@@ -70,7 +70,7 @@ export default function Work() {
 				</Stack>
 				<NextLink href='/projects' passHref>
 					<Button rightIcon={<Icon as={FiArrowRight} />}>
-						All Projects
+						More Projects / Work
 					</Button>
 				</NextLink>
 			</VStack>

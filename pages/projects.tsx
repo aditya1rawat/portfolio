@@ -15,7 +15,7 @@ const Projects: NextPage = () => {
 				<link rel='icon' href='assets/images/me/nyucenter.jpg' />
 			</Head>
 			<Heading size='xl' as='h2' display={'flex'} flexDir={'row'}>
-				Projects
+				Projects / Work
 			</Heading>
 			<ProjectList />
 		</Box>
