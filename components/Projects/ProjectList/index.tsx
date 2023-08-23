@@ -1,4 +1,4 @@
-import { Stack, SimpleGrid, VStack } from '@chakra-ui/react';
+import { SimpleGrid } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
 
 export default function ProjectList() {

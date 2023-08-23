@@ -1,11 +1,4 @@
-import {
-	Box,
-	Heading,
-	IconButton,
-	Image,
-	SimpleGrid,
-	Text
-} from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Tech from '../components/About/tech';
@@ -17,42 +10,46 @@ const About: NextPage = () => {
 				<title>Aditya Rawat.</title>
 				<meta
 					name='description'
-					content='Web Developer. Software Engineer. High Schooler. Among Other Things.'
+					content='full-stack developer, software engineer, and researcher.'
 				/>
-				<link rel='icon' href='assets/images/me/nyucenter.jpg' />
+				<link rel='icon' href='assets/images/me/home-headshot.jpg' />
 			</Head>
-			<Image
-				src={'/assets/images/me/nyucenter.jpg'}
-				alt={'Picture of Aditya Rawat'}
-				width={'full'}
-				height={'auto'}
-				rounded={'lg'}
-			/>
 			<Heading as={'h2'} my='3'>
 				Hi. I&apos;m Aditya Rawat
 			</Heading>
 			<Text my='5'>
-				I began my journey as a programmer early in elementary school
-				originally diving straight into software engineering. Over time,
-				I began to learn web devleopment which, because of it&apos;s
-				visual product and appeal, became my passion.
+				I started my programming journey way back in elementary school,
+				initially diving into the world of software engineering.
+				However, I found myself drawn to web development due to its
+				visual appeal and practicality.
 			</Text>
 			<Text my='5'>
-				I began by making small websites which were all mostly static,
-				but over time I implemented various aspects of software
-				engineering to build larger, more dynamic web applications that
-				had a purpose other than being pretty.
+				My early projects were small-scale, involving basic websites
+				with limited functionality. Over time, I integrated software
+				engineering principles to create more complex and interactive
+				web applications with clear purposes.
 			</Text>
 			<Text my='5'>
-				As I continued to grow and learn, I began connecting with a
-				people around me with similar interests and through that I was
-				able to expand my knowledge and skillset. By today, I have
-				started and worked for several nonprofits, startups, and small
-				companies.
+				As I continued learning and evolving, I connected with
+				individuals who shared similar interests. These connections
+				provided opportunities for skill expansion. Today, I&apos;ve
+				already embarked on projects with nonprofits, startups, and
+				small companies, despite still being a student.
 			</Text>
 			<Text my='5'>
-				Still a student, there is still so much to learn, and I am
-				always looking for more oppurtunities to learn and grow.
+				Despite my progress, the learning journey is ongoing. I&apos;m
+				constantly seeking new opportunities to learn and grow. Shifting
+				from my web development origins, I&apos;m now focused on
+				becoming a skilled software engineer, specializing in designing
+				intelligent and scalable software systems.
+			</Text>
+			<Text my='5'>
+				Beyond my core pursuits, I&apos;m deeply intrigued by emerging
+				technologies like AI, Web3, and Quantum Computing. I&apos;m
+				actively engaged in research and eager to contribute to the
+				advancement of these fields. If you&apos;d like to connect, feel
+				free to reach out. I&apos;m enthusiastic about networking and
+				collaborating as I navigate through this exciting journey!
 			</Text>
 			<Tech />
 		</Box>

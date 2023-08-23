@@ -1,20 +1,16 @@
 import {
 	Box,
-	Button,
 	Heading,
-	Icon,
 	IconButton,
 	SimpleGrid,
-	Stack,
 	Text,
 	Tooltip,
 	useColorModeValue,
 	useToast
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
-import { FiExternalLink, FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiInstagram, FiLinkedin, FiMail } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
-import { IoIosPaper } from 'react-icons/io';
 import Head from 'next/head';
 
 const Contact: NextPage = () => {
@@ -25,9 +21,9 @@ const Contact: NextPage = () => {
 				<title>Aditya Rawat.</title>
 				<meta
 					name='description'
-					content='Web Developer. Software Engineer. High Schooler. Among Other Things.'
+					content='full-stack developer, software engineer, and researcher.'
 				/>
-				<link rel='icon' href='assets/images/me/nyucenter.jpg' />
+				<link rel='icon' href='assets/images/me/home-headshot.jpg' />
 			</Head>
 			<Heading as={'h2'} mt='3' mb='10'>
 				Contact & Reach Out!

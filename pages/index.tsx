@@ -12,9 +12,9 @@ const Home: NextPage = () => {
 				<title>Aditya Rawat.</title>
 				<meta
 					name='description'
-					content='Web Developer. Software Engineer. High Schooler. Among Other Things.'
+					content='full-stack developer, software engineer, and researcher.'
 				/>
-				<link rel='icon' href='assets/images/me/nyucenter.jpg' />
+				<link rel='icon' href='assets/images/me/home-headshot.jpg' />
 			</Head>
 			<Hero />
 			<Work />

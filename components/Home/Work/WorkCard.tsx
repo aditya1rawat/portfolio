@@ -1,22 +1,17 @@
 import {
 	VStack,
-	SimpleGrid,
 	Heading,
-	Icon,
 	Text,
 	AspectRatio,
 	GridItem,
-	HStack,
 	Flex,
 	Image,
 	Box,
-	Button,
 	IconButton,
 	useColorModeValue,
 	Link
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import NextLink from 'next/link';
 import { FiArrowUpRight, FiGithub } from 'react-icons/fi';
 
 interface WorkCardProps {

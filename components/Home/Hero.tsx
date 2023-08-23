@@ -126,9 +126,29 @@ export default function Hero() {
 							Kamunity.io
 							<TagRightIcon as={FiArrowUpRight} ml={'1'} />
 						</Tag>
-						. I am currently a freshman at the University of
-						Wisconsin, Madison actively pursuing a future in
-						computer science.
+						. I am currently a freshman at the{' '}
+						<Tag
+							as='a'
+							href='https://www.wisc.edu/'
+							target={'_blank'}
+							ml={'0'}
+							mt={'0.5'}
+							py={'0.5'}
+							bg={useColorModeValue('white', 'black')}
+							color={useColorModeValue('black', 'white')}
+							_hover={{
+								transition: '0.3s ease-in-out',
+								backgroundColor: useColorModeValue(
+									'black',
+									'white'
+								),
+								color: useColorModeValue('white', 'black')
+							}}
+						>
+							University of Wisconsin, Madison
+							<TagRightIcon as={FiArrowUpRight} ml={'1'} />
+						</Tag>{' '}
+						actively pursuing a future in computer and data science.
 					</Text>
 				</RoughNotationGroup>
 
@@ -195,7 +215,7 @@ export default function Hero() {
 			<AspectRatio flexShrink={0} ratio={1} w={56} h={56} as='figure'>
 				<Box>
 					<Image
-						src={'/assets/images/me/robotics.jpeg'}
+						src={'/assets/images/me/home-headshot.jpg'}
 						rounded='full'
 						alt={'Picture of Aditya Rawat'}
 					/>
