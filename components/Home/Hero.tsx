@@ -94,20 +94,20 @@ export default function Hero() {
 							researcher
 						</RoughNotation>{' '}
 						creating anything from small hackathon projects to
-						complex, full-fledged applications. Most recently,
-						I&apos;ve worked as{' '}
+						complex, full-fledged applications. This summer,
+						I will be working as a {' '}
 						<RoughNotation
 							type='highlight'
 							color='#f57f17'
 							animationDuration={1500}
 							multiline
 						>
-							a fullstack developer intern
+							software engineering intern
 						</RoughNotation>{' '}
 						at{' '}
 						<Tag
 							as='a'
-							href='https://www.kamunity.io/'
+							href='https://www.linkedin.com/posts/aditya1rawat_fidelityintern-softwareengineer-intern2024-activity-7160735522368229376-OVHc?utm_source=share'
 							target={'_blank'}
 							ml={'0'}
 							mt={'0.5'}
@@ -123,7 +123,7 @@ export default function Hero() {
 								color: useColorModeValue('white', 'black')
 							}}
 						>
-							Kamunity.io
+							Fidelity Investments
 							<TagRightIcon as={FiArrowUpRight} ml={'1'} />
 						</Tag>
 						. I am currently a freshman at the{' '}

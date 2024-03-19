@@ -4,6 +4,23 @@ import ProjectCard from './ProjectCard';
 export default function ProjectList() {
 	const projects = [
 		{
+			image: '/assets/images/worklogos/fidelity.png',
+			title: 'Fidelity Investments',
+			text: 'Incoming Software Engineering Intern for the summer of 2024 at the Durham, NC corporate office.',
+			tech: [
+				'Java',
+				'Javascript',
+				'SQL',
+				'AWS',
+				'JUnit'
+			],
+			wip: false,
+			internship: true,
+			commissioned: false,
+			live: 'https://www.fidelity.com/',
+			github: 'https://github.com/fidelity'
+		},
+		{
 			image: '/assets/images/worklogos/kamunity.jpg',
 			title: 'Kamunity.io',
 			text: 'A platform that brings like-minded people together, to learn from one another, and enhance their financial fulfillment',
