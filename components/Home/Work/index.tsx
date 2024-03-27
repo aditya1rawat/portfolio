@@ -14,18 +14,18 @@ import WorkCard from './WorkCard';
 
 const projects = [
 	{
+		image: '/assets/images/worklogos/fidelity.png',
+		title: 'Fidelity Investments',
+		text: 'Incoming Software Engineering Intern for the summer of 2024 at the Durham, NC corporate office.',
+		live: 'https://www.fidelity.com/',
+		github: 'https://github.com/fidelity'
+	},
+	{
 		image: '/assets/images/worklogos/kamunity.jpg',
 		title: 'Kamunity.io',
 		text: 'A platform that brings like-minded people together, to learn from one another, and enhance their financial fulfillment',
 		live: 'https://www.kamunity.io/',
 		github: 'https://github.com/kamunity-io'
-	},
-	{
-		image: '/assets/images/worklogos/memorizeai.jpg',
-		title: 'Memorize.ai',
-		text: 'The ultimate memorization tool for all students, merging spaced repeition with Artificial Intelligence and Machine Learning',
-		live: 'https://memorize.ai/',
-		github: 'https://github.com/memorize-ai'
 	},
 	{
 		image: '/assets/images/worklogos/sigmoidhackslogo.png',
