@@ -94,8 +94,8 @@ export default function Hero() {
 							researcher
 						</RoughNotation>{' '}
 						creating anything from small hackathon projects to
-						complex, full-fledged applications. This summer,
-						I will be working as a {' '}
+						complex, full-fledged applications. This summer, I will
+						be working as a{' '}
 						<RoughNotation
 							type='highlight'
 							color='#f57f17'
@@ -104,7 +104,7 @@ export default function Hero() {
 						>
 							software engineering intern
 						</RoughNotation>{' '}
-						at{' '}
+						at
 						<Tag
 							as='a'
 							href='https://www.linkedin.com/posts/aditya1rawat_fidelityintern-softwareengineer-intern2024-activity-7160735522368229376-OVHc?utm_source=share'
@@ -113,20 +113,18 @@ export default function Hero() {
 							mt={'0.5'}
 							py={'0.5'}
 							bg={useColorModeValue('white', 'black')}
+							transition={'0.3s ease-in-out'}
 							color={useColorModeValue('black', 'white')}
 							_hover={{
 								transition: '0.3s ease-in-out',
-								backgroundColor: useColorModeValue(
-									'black',
-									'white'
-								),
-								color: useColorModeValue('white', 'black')
+								backgroundColor: '#4D8536',
+								color: 'white'
 							}}
 						>
 							Fidelity Investments
 							<TagRightIcon as={FiArrowUpRight} ml={'1'} />
 						</Tag>
-						. I am currently a freshman at the{' '}
+						. I am currently an undergraduate student at the
 						<Tag
 							as='a'
 							href='https://www.wisc.edu/'
@@ -136,13 +134,11 @@ export default function Hero() {
 							py={'0.5'}
 							bg={useColorModeValue('white', 'black')}
 							color={useColorModeValue('black', 'white')}
+							transition={'0.3s ease-in-out'}
 							_hover={{
 								transition: '0.3s ease-in-out',
-								backgroundColor: useColorModeValue(
-									'black',
-									'white'
-								),
-								color: useColorModeValue('white', 'black')
+								backgroundColor: '#C5050C',
+								color: 'white'
 							}}
 						>
 							University of Wisconsin, Madison
