@@ -6,14 +6,8 @@ export default function ProjectList() {
 		{
 			image: '/assets/images/worklogos/fidelity.png',
 			title: 'Fidelity Investments',
-			text: 'Incoming Software Engineering Intern for the summer of 2024 at the Durham, NC corporate office.',
-			tech: [
-				'Java',
-				'Javascript',
-				'SQL',
-				'AWS',
-				'JUnit'
-			],
+			text: 'Software Engineering Intern for the summer of 2024 at the Durham, NC corporate office.',
+			tech: ['Python', 'FastAPI', 'AngularJS', 'SQL', 'AWS', 'Snowflake'],
 			wip: false,
 			internship: true,
 			commissioned: false,
@@ -192,7 +186,7 @@ export default function ProjectList() {
 			commissioned: false,
 			live: 'https://irvinehak2020.netlify.com/',
 			github: 'https://github.com/aditya1rawat/IrvineHacks2020Project'
-		},
+		}
 		// {
 		// 	image: '/assets/images/worklogos/github.png',
 		// 	title: 'Retina OCT',

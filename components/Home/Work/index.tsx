@@ -16,7 +16,7 @@ const projects = [
 	{
 		image: '/assets/images/worklogos/fidelity.png',
 		title: 'Fidelity Investments',
-		text: 'Incoming Software Engineering Intern for the summer of 2024 at the Durham, NC corporate office.',
+		text: 'Summer 2024 SWE Intern.',
 		live: 'https://www.fidelity.com/',
 		github: 'https://github.com/fidelity'
 	},

@@ -6,17 +6,12 @@ import {
 	Box,
 	AspectRatio,
 	Image,
-	Icon,
 	Button,
 	IconButton,
-	SimpleGrid,
-	Tooltip,
-	Badge,
 	Tag,
 	TagRightIcon,
 	useColorModeValue
 } from '@chakra-ui/react';
-import NextLink from 'next/link';
 import { motion } from 'framer-motion';
 import {
 	FiArrowUpRight,
@@ -94,8 +89,8 @@ export default function Hero() {
 							researcher
 						</RoughNotation>{' '}
 						creating anything from small hackathon projects to
-						complex, full-fledged applications. This summer, I will
-						be working as a{' '}
+						complex, full-fledged applications. Most recently, I was
+						a{' '}
 						<RoughNotation
 							type='highlight'
 							color='#f57f17'
@@ -104,7 +99,7 @@ export default function Hero() {
 						>
 							software engineering intern
 						</RoughNotation>{' '}
-						at
+						at{' '}
 						<Tag
 							as='a'
 							href='https://www.linkedin.com/posts/aditya1rawat_fidelityintern-softwareengineer-intern2024-activity-7160735522368229376-OVHc?utm_source=share'
