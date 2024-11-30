@@ -85,10 +85,9 @@ export default function Hero() {
 							animationDuration={1500}
 							multiline
 						>
-							full-stack developer, software engineer, and
-							researcher
+							software engineer interested in quant finance and AI
 						</RoughNotation>{' '}
-						creating anything from small hackathon projects to
+						,creating anything from small hackathon projects to
 						complex, full-fledged applications. Most recently, I was
 						a{' '}
 						<RoughNotation

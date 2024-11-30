@@ -10,7 +10,7 @@ const About: NextPage = () => {
 				<title>Aditya Rawat.</title>
 				<meta
 					name='description'
-					content='full-stack developer, software engineer, and researcher.'
+					content='software engineer, quant, ai.'
 				/>
 				<link rel='icon' href='assets/images/me/home-headshot.jpg' />
 			</Head>
